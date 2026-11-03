@@ -1,4 +1,28 @@
 # Source of truth for README.md. Review guide: CONTRIBUTING.md
+- id: github:haojiawu/cellscopes.jl
+  name: CellScopes.jl
+  url: https://github.com/HaojiaWu/CellScopes.jl
+  status: listed
+  category: general
+  description: A Julia package for single cell and spatial data analysis
+  language: Julia
+  platforms:
+  - Xenium
+  - MERFISH/MERSCOPE
+  - seqFISH
+  - STARmap
+  - ISS
+  paper:
+    doi: 10.1038/s41467-024-45752-8
+    title: High resolution spatial profiling of kidney injury and repair using RNA hybridization-based in situ sequencing
+    year: 2024
+    preprint: false
+  stars: 47
+  last_push: '2025-08-07'
+  archived: false
+  source: github-search
+  added: '2026-11-03'
+  score: 11
 - id: github:giotto-suite/giotto
   name: Giotto
   url: https://github.com/giotto-suite/Giotto
@@ -75,6 +99,28 @@
   archived: false
   source: seed
   added: '2026-11-03'
+- id: github:dbjzs/spalp
+  name: SpaLP
+  url: https://github.com/dbjzs/SpaLP
+  status: listed
+  category: general
+  description: A lightweight, ultrafast and general embedding framework for large-scale spatial omics data
+  language: Python
+  platforms:
+  - Xenium
+  - CosMx
+  - STARmap
+  paper:
+    doi: 10.64898/2026.02.04.703814
+    title: A lightweight, ultrafast and general embedding framework for large-scale spatial omics data
+    year: 2026
+    preprint: true
+  stars: 37
+  last_push: '2026-10-16'
+  archived: false
+  source: github-search
+  added: '2026-11-03'
+  score: 12
 - id: github:drighelli/spatialexperiment
   name: SpatialExperiment
   url: https://github.com/drighelli/SpatialExperiment
@@ -111,6 +157,28 @@
   archived: false
   source: seed
   added: '2026-11-03'
+- id: github:genomicai/truecell
+  name: truecell
+  url: https://github.com/GenomicAI/truecell
+  status: listed
+  category: general
+  description: Pure-Python port of Seurat (v5) — single-cell RNA-seq and spatial transcriptomics analysis (Xenium/Visium/CosMx), built on NumPy/SciPy/AnnData.
+  language: Python
+  platforms:
+  - Xenium
+  - CosMx
+  - MERFISH/MERSCOPE
+  paper:
+    doi: 10.1038/s41587-023-01767-y
+    title: Dictionary learning for integrative, multimodal and scalable single-cell analysis
+    year: 2023
+    preprint: false
+  stars: 15
+  last_push: '2026-10-07'
+  archived: false
+  source: github-search
+  added: '2026-11-03'
+  score: 13
 - id: github:pachterlab/voyager
   name: Voyager
   url: https://github.com/pachterlab/voyager
@@ -152,6 +220,28 @@
   archived: false
   source: seed
   added: '2026-11-03'
+- id: github:anthbapt/mosaik
+  name: MOSAIK
+  url: https://github.com/anthbapt/MOSAIK
+  status: listed
+  category: pipelines
+  description: 'Multi-Origin Spatial Transcriptomics Analysis and Integration Kit: stitches CosMx fields of view, resegments CosMx and Xenium samples (Cellpose-SAM + Proseg) and integrates MERSCOPE data'
+  language: Jupyter Notebook
+  platforms:
+  - Xenium
+  - CosMx
+  - MERFISH/MERSCOPE
+  paper:
+    doi: 10.21105/joss.08795
+    title: 'MOSAIK: Multi-Origin Spatial Transcriptomics Analysis and Integration Kit'
+    year: 2026
+    preprint: false
+  stars: 20
+  last_push: '2026-08-28'
+  archived: false
+  source: github-search
+  added: '2026-11-03'
+  score: 11
 - id: github:nf-core/molkart
   name: nf-core/molkart
   url: https://github.com/nf-core/molkart
@@ -171,7 +261,7 @@
   url: https://github.com/prism-oncology/sopa
   status: listed
   category: pipelines
-  description: Technology-invariant pipeline for spatial omics analysis that scales to millions of cells (Xenium / Visium HD / MERSCOPE / CosMx / PhenoCycler / MACSima / etc.)
+  description: 'Technology-invariant pipeline for spatial omics analysis that scales to millions of cells (Xenium / Visium HD / MERSCOPE / CosMx / etc.). Nextflow version: [nf-core/sopa](https://github.com/nf-core/sopa)'
   language: Python
   platforms:
   - Xenium
@@ -187,6 +277,61 @@
   last_push: '2026-11-03'
   archived: false
   source: seed
+  added: '2026-11-03'
+- id: github:cbib/spaceblocks
+  name: SpaceBlocks
+  url: https://github.com/cbib/SpaceBlocks
+  status: listed
+  category: pipelines
+  description: Technology-agnostic Snakemake workflow for expert-supervised, cohort-level analysis of single-cell-resolution spatial transcriptomics
+  language: Python
+  platforms:
+  - MERFISH/MERSCOPE
+  - Xenium
+  paper:
+    doi: 10.64898/2026.10.30.763100
+    title: 'SpaceBlocks: an expert-supervised workflow for cohort-level spatial transcriptomics analysis'
+    year: 2026
+    preprint: true
+  stars: 5
+  last_push: '2026-11-03'
+  archived: false
+  source: europepmc
+  added: '2026-11-03'
+- id: github:nf-core/spatialaxe
+  name: spatialaxe
+  url: https://github.com/nf-core/spatialaxe
+  status: listed
+  category: pipelines
+  description: A bioinformatics best-practice processing and quality control pipeline for Xenium and Artera data
+  language: Python
+  platforms:
+  - Xenium
+  stars: 46
+  last_push: '2026-10-26'
+  archived: false
+  source: github-search
+  added: '2026-11-03'
+  score: 14
+- id: github:l-zh007/spatialsnake
+  name: spatialsnake
+  url: https://github.com/l-zh007/spatialsnake
+  status: listed
+  category: pipelines
+  description: A Snakemake workflow for spatial transcriptomics
+  language: Python
+  platforms:
+  - MERFISH/MERSCOPE
+  - Xenium
+  paper:
+    doi: 10.64898/2026.10.27.762082
+    title: 'Spatialsnake: a flexible workflow for spatial transcriptomics analysis across platforms'
+    year: 2026
+    preprint: true
+  stars: 2
+  last_push: '2026-11-02'
+  archived: false
+  source: europepmc
   added: '2026-11-03'
 - id: github:vizgen/vizgen-postprocessing
   name: Vizgen Post-processing Tool (VPT)
@@ -279,6 +424,28 @@
   archived: false
   source: seed
   added: '2026-11-03'
+- id: github:pachterlab/spatialfeatureexperiment
+  name: SpatialFeatureExperiment
+  url: https://github.com/pachterlab/SpatialFeatureExperiment
+  status: listed
+  category: io
+  description: Extension of SpatialExperiment with sf
+  language: R
+  platforms:
+  - Xenium
+  - CosMx
+  - MERFISH/MERSCOPE
+  paper:
+    doi: 10.1101/2023.07.20.549945
+    title: 'Voyager: exploratory single-cell genomics data analysis with geospatial statistics'
+    year: 2023
+    preprint: true
+  stars: 59
+  last_push: '2026-11-02'
+  archived: false
+  source: github-search
+  added: '2026-11-03'
+  score: 12
 - id: github:waldronlab/xeniumio
   name: XeniumIO
   url: https://github.com/waldronlab/XeniumIO
@@ -293,6 +460,42 @@
   archived: false
   source: seed
   added: '2026-11-03'
+- id: github:interactivereport/cellxgene_vip
+  name: cellxgene_VIP
+  url: https://github.com/interactivereport/cellxgene_VIP
+  status: listed
+  category: viewers
+  description: Enables cellxgene to generate violin, stacked violin, stacked bar, heatmap, volcano, embedding, dot, track, density, 2D density, sankey and dual-gene plot in high-resolution SVG/PNG format. It also performs differential gene expression analysis and provides a Command Line Interface (CLI) for advanced users to perform analysis using python and R.
+  language: Jupyter Notebook
+  platforms:
+  - CosMx
+  paper:
+    doi: 10.1101/2020.08.28.270652
+    title: Cellxgene VIP unleashes full power of interactive visualization and integrative analysis of scRNA-seq, spatial transcriptomics, and multiome data
+    year: 2020
+    preprint: true
+  stars: 165
+  last_push: '2026-06-23'
+  archived: false
+  source: github-search
+  added: '2026-11-03'
+  score: 11
+- id: github:lilab-bcb/cirrocumulus
+  name: cirrocumulus
+  url: https://github.com/lilab-bcb/cirrocumulus
+  status: listed
+  category: viewers
+  description: Bring your single-cell data to life
+  language: JavaScript
+  platforms:
+  - Xenium
+  - MERFISH/MERSCOPE
+  stars: 102
+  last_push: '2026-11-02'
+  archived: false
+  source: github-search
+  added: '2026-11-03'
+  score: 12
 - id: github:scverse/napari-spatialdata
   name: napari-spatialdata
   url: https://github.com/scverse/napari-spatialdata
@@ -327,6 +530,42 @@
   archived: false
   source: seed
   added: '2026-11-03'
+- id: github:camlab-bioml/rakaia
+  name: rakaia
+  url: https://github.com/camlab-bioml/rakaia
+  status: listed
+  category: viewers
+  description: Scalable spatial omics in the browser for hundreds of samples at once | 10x, IMC, IF, H&E, CosMX, & more | https://rakaia.io/
+  language: Python
+  platforms:
+  - Xenium
+  - CosMx
+  stars: 73
+  last_push: '2026-11-03'
+  archived: false
+  source: github-search
+  added: '2026-11-03'
+  score: 12
+- id: github:chaichontat/samui
+  name: samui
+  url: https://github.com/chaichontat/samui
+  status: listed
+  category: viewers
+  description: A performant scientific image visualization system.
+  language: TypeScript
+  platforms:
+  - MERFISH/MERSCOPE
+  paper:
+    doi: 10.1101/2023.01.28.525943
+    title: Performant web-based interactive visualization tool for spatially-resolved transcriptomics experiments
+    year: 2023
+    preprint: true
+  stars: 37
+  last_push: '2026-08-05'
+  archived: false
+  source: github-search
+  added: '2026-11-03'
+  score: 11
 - id: github:scverse/spatialdata-plot
   name: spatialdata-plot
   url: https://github.com/scverse/spatialdata-plot
@@ -397,6 +636,26 @@
   archived: false
   source: seed
   added: '2026-11-03'
+- id: github:gear-genomics/dicey
+  name: dicey
+  url: https://github.com/gear-genomics/dicey
+  status: listed
+  category: panel
+  description: In-silico PCR, primer design and padlock design for in-situ sequencing
+  language: C++
+  platforms:
+  - ISS
+  paper:
+    doi: 10.1093/nar/gkag445
+    title: 'GEAR Genomics: a user-friendly, open-source web platform enabling interactive genomic analysis for molecular biologists'
+    year: 2026
+    preprint: false
+  stars: 55
+  last_push: '2026-08-19'
+  archived: false
+  source: github-search
+  added: '2026-11-03'
+  score: 12
 - id: github:marionilab/genebasisr
   name: geneBasis
   url: https://github.com/MarioniLab/geneBasisR
@@ -623,6 +882,26 @@
   archived: false
   source: seed
   added: '2026-11-03'
+- id: github:qi2lab/merfish3d-analysis
+  name: merfish3d-analysis
+  url: https://github.com/QI2lab/merfish3d-analysis
+  status: listed
+  category: decoding
+  description: GPU accelerated post-processing for 2D or 3D imaging spatial transcriptomics data.
+  language: Python
+  platforms:
+  - MERFISH/MERSCOPE
+  paper:
+    doi: 10.1101/2025.10.10.681751
+    title: GPU-accelerated, self-optimizing processing for 3D multiplexed iterative RNA-FISH experiments
+    year: 2025
+    preprint: true
+  stars: 10
+  last_push: '2026-11-03'
+  archived: false
+  source: github-search
+  added: '2026-11-03'
+  score: 11
 - id: github:emanuega/merlin
   name: MERlin
   url: https://github.com/emanuega/MERlin
@@ -959,6 +1238,27 @@
   archived: false
   source: seed
   added: '2026-11-03'
+- id: github:fish-quant/rna2seg
+  name: rna2seg
+  url: https://github.com/fish-quant/rna2seg
+  status: listed
+  category: segmentation
+  description: Deep-learning model for cell segmentation in imaging-based spatial transcriptomics
+  language: Python
+  platforms:
+  - CosMx
+  - MERFISH/MERSCOPE
+  paper:
+    doi: 10.1101/2025.03.03.641259
+    title: 'RNA2seg: a generalist model for cell segmentation in image-based spatial transcriptomics'
+    year: 2025
+    preprint: true
+  stars: 25
+  last_push: '2025-05-15'
+  archived: false
+  source: github-search
+  added: '2026-11-03'
+  score: 11
 - id: github:elihei2/segger_dev
   name: segger
   url: https://github.com/EliHei2/segger_dev
@@ -977,6 +1277,27 @@
   last_push: '2026-10-12'
   archived: false
   source: seed
+  added: '2026-11-03'
+- id: github:wenwenmin/spacut
+  name: SpaCut
+  url: https://github.com/wenwenmin/SpaCut
+  status: listed
+  category: segmentation
+  description: 'SpaCut: Transcript-aware Morphology Fusion for Robust Cell Segmentation in Subcellular Spatial Transcriptomics'
+  language: Jupyter Notebook
+  platforms:
+  - CosMx
+  - MERFISH/MERSCOPE
+  - Xenium
+  paper:
+    doi: 10.1002/advs.78423
+    title: 'SpaCut: Transcript-Aware Morphology Fusion for Robust Cell Segmentation in Subcellular Spatial Transcriptomics'
+    year: 2026
+    preprint: false
+  stars: 3
+  last_push: '2026-10-17'
+  archived: false
+  source: europepmc
   added: '2026-11-03'
 - id: github:stardist/stardist
   name: StarDist
@@ -1229,6 +1550,50 @@
   archived: false
   source: seed
   added: '2026-11-03'
+- id: github:gruenlab/nico-wrapper
+  name: NiCo
+  url: https://github.com/gruenlab/nico-wrapper
+  status: listed
+  category: annotation
+  description: 'NiCo workflow: cell type annotation of single-cell-resolution spatial data, niche interactions and gene-program covariation. Wraps [nico-sc-sp](https://github.com/ankitbioinfo/nico_tutorial)'
+  language: Jupyter Notebook
+  platforms:
+  - Xenium
+  - MERFISH/MERSCOPE
+  - seqFISH
+  paper:
+    doi: 10.1038/s41467-024-54973-w
+    title: NiCo identifies extrinsic drivers of cell state modulation by niche covariation analysis
+    year: 2024
+    preprint: false
+  stars: 1
+  last_push: '2026-10-12'
+  archived: false
+  source: github-search
+  added: '2026-11-03'
+  score: 11
+- id: github:p-gueguen/rctd-py
+  name: rctd-py
+  url: https://github.com/p-gueguen/rctd-py
+  status: listed
+  category: annotation
+  description: GPU-accelerated RCTD for spatial transcriptomics
+  language: Python
+  platforms:
+  - Xenium
+  - CosMx
+  - MERFISH/MERSCOPE
+  paper:
+    doi: 10.1038/s41587-021-00830-w
+    title: Robust decomposition of cell type mixtures in spatial transcriptomics
+    year: 2021
+    preprint: false
+  stars: 66
+  last_push: '2026-11-02'
+  archived: false
+  source: github-search
+  added: '2026-11-03'
+  score: 11
 - id: github:dmcable/spacexr
   name: spacexr (RCTD, C-SIDE)
   url: https://github.com/dmcable/spacexr
@@ -1282,6 +1647,46 @@
   archived: false
   source: seed
   added: '2026-11-03'
+- id: github:mims-harvard/concert
+  name: CONCERT
+  url: https://github.com/mims-harvard/CONCERT
+  status: listed
+  category: imputation
+  description: Generative modeling of spatially resolved perturbation responses with CONCERT
+  language: Jupyter Notebook
+  platforms:
+  - MERFISH/MERSCOPE
+  paper:
+    doi: 10.1101/2025.11.08.686890
+    title: Generative modeling of spatially resolved perturbation responses with CONCERT
+    year: 2025
+    preprint: true
+  stars: 29
+  last_push: '2026-10-18'
+  archived: false
+  source: github-search
+  added: '2026-11-03'
+  score: 11
+- id: github:digitalcytometry/cytospace
+  name: cytospace
+  url: https://github.com/digitalcytometry/cytospace
+  status: listed
+  category: imputation
+  description: 'CytoSPACE: Optimal mapping of scRNA-seq data to spatial transcriptomics data'
+  language: Python
+  platforms:
+  - MERFISH/MERSCOPE
+  paper:
+    doi: 10.1038/s41587-023-01697-9
+    title: High-resolution alignment of single-cell and spatial transcriptomes with CytoSPACE
+    year: 2023
+    preprint: false
+  stars: 153
+  last_push: '2025-02-20'
+  archived: false
+  source: github-search
+  added: '2026-11-03'
+  score: 10
 - id: github:dpeerlab/envi
   name: ENVI
   url: https://github.com/dpeerlab/ENVI
@@ -1408,7 +1813,7 @@
   url: https://github.com/prabhakarlab/Banksy
   status: listed
   category: domains
-  description: 'BANKSY: spatial clustering'
+  description: 'BANKSY: spatial clustering. Python version: [Banksy_py](https://github.com/prabhakarlab/Banksy_py)'
   language: R
   platforms:
   - Xenium
@@ -1448,6 +1853,48 @@
   archived: false
   source: seed
   added: '2026-11-03'
+- id: github:abbasilab/celltransformer
+  name: celltransformer
+  url: https://github.com/abbasilab/celltransformer
+  status: listed
+  category: domains
+  description: Transformer based region discovery in spatial transcriptomics (but mostly MERFISH) datasets
+  language: Jupyter Notebook
+  platforms:
+  - MERFISH/MERSCOPE
+  paper:
+    doi: 10.1038/s41467-025-64259-4
+    title: Data-driven fine-grained region discovery in the mouse brain with transformers
+    year: 2025
+    preprint: false
+  stars: 20
+  last_push: '2025-03-14'
+  archived: false
+  source: github-search
+  added: '2026-11-03'
+  score: 11
+- id: github:barondu/cosmim
+  name: cosmim
+  url: https://github.com/barondu/cosmim
+  status: listed
+  category: domains
+  description: 'CoSMIM: redefining the niche as multi-scale neighbourhood gene covariance for training-free spatial-domain identification'
+  language: Jupyter Notebook
+  platforms:
+  - MERFISH/MERSCOPE
+  - STARmap
+  - Xenium
+  - smFISH
+  paper:
+    doi: 10.64898/2026.10.20.760373
+    title: Multi-scale microenvironment covariance for unsupervised spatial domain identification
+    year: 2026
+    preprint: true
+  stars: 0
+  last_push: '2026-10-27'
+  archived: false
+  source: europepmc
+  added: '2026-11-03'
 - id: github:hubioinfo/cytocommunity
   name: CytoCommunity
   url: https://github.com/huBioinfo/CytoCommunity
@@ -1467,6 +1914,27 @@
   archived: false
   source: seed
   added: '2026-11-03'
+- id: github:raphael-group/gaston
+  name: GASTON
+  url: https://github.com/raphael-group/GASTON
+  status: listed
+  category: domains
+  description: 'GASTON: deep learning algorithm learns "topography" of a tissue slice from spatial transcriptomics data'
+  language: Python
+  platforms:
+  - Xenium
+  - MERFISH/MERSCOPE
+  paper:
+    doi: 10.1038/s41592-024-02503-3
+    title: Mapping the topography of spatial gene expression with interpretable deep learning
+    year: 2025
+    preprint: false
+  stars: 76
+  last_push: '2025-12-01'
+  archived: false
+  source: github-search
+  added: '2026-11-03'
+  score: 11
 - id: github:jinmiaochenlab/graphst
   name: GraphST
   url: https://github.com/JinmiaoChenLab/GraphST
@@ -1483,6 +1951,25 @@
   last_push: '2024-03-19'
   archived: false
   source: seed
+  added: '2026-11-03'
+- id: github:cantinilab/kontext
+  name: Kontext
+  url: https://github.com/cantinilab/Kontext
+  status: listed
+  category: domains
+  description: 'Kontext: Kernel-based method bridging spatial domain identification and cell-cell communication'
+  language: Python
+  platforms:
+  - Xenium
+  paper:
+    doi: 10.64898/2026.10.26.761813
+    title: 'Kontext: Kernel-based method bridging spatial domain identification and cell-cell communication'
+    year: 2026
+    preprint: true
+  stars: 1
+  last_push: '2026-11-02'
+  archived: false
+  source: europepmc
   added: '2026-11-03'
 - id: github:lotfollahi-lab/nichecompass
   name: NicheCompass
@@ -1569,6 +2056,27 @@
   archived: false
   source: seed
   added: '2026-11-03'
+- id: github:sggb0nd/step
+  name: step
+  url: https://github.com/SGGb0nd/step
+  status: listed
+  category: domains
+  description: 'Public repo for STEP: Spatial Transcriptomics Embedding Procedure'
+  language: Python
+  platforms:
+  - MERFISH/MERSCOPE
+  - STARmap
+  paper:
+    doi: 10.1101/2024.04.15.589470
+    title: 'STEP: Spatial Transcriptomics Embedding Procedure for Multi-scale Biological Heterogeneities Revelation in Multiple Samples'
+    year: 2024
+    preprint: true
+  stars: 18
+  last_push: '2026-08-06'
+  archived: false
+  source: github-search
+  added: '2026-11-03'
+  score: 11
 - id: github:elementolab/utag
   name: UTAG
   url: https://github.com/ElementoLab/utag
@@ -1586,6 +2094,49 @@
   archived: false
   source: seed
   added: '2026-11-03'
+- id: github:secrierlab/enrichmap
+  name: EnrichMap
+  url: https://github.com/secrierlab/EnrichMap
+  status: listed
+  category: stats
+  description: 'EnrichMap: Spatially-informed enrichment analysis for functional interpretation of spatial transcriptomics.'
+  language: Python
+  platforms:
+  - Xenium
+  - MERFISH/MERSCOPE
+  paper:
+    doi: 10.1101/2025.05.30.656960
+    title: 'EnrichMap: Spatially informed enrichment analysis for functional interpretation of spatial transcriptomics'
+    year: 2025
+    preprint: true
+  stars: 17
+  last_push: '2026-10-07'
+  archived: false
+  source: github-search
+  added: '2026-11-03'
+  score: 11
+- id: github:maier-lab/ripple
+  name: RIPPLE
+  url: https://github.com/Maier-Lab/RIPPLE
+  status: listed
+  category: stats
+  description: RIPPLE - Spatial transcriptomics analysis of a cell's influence on its neighbors' transcriptome
+  language: R
+  platforms:
+  - Xenium
+  - CosMx
+  - MERFISH/MERSCOPE
+  paper:
+    doi: 10.64898/2026.07.23.740288
+    title: 'RIPPLE: replicate-aware detection of cell-type-anchored proximity gradients in spatial transcriptomics'
+    year: 2026
+    preprint: true
+  stars: 41
+  last_push: '2026-09-14'
+  archived: false
+  source: github-search
+  added: '2026-11-03'
+  score: 11
 - id: github:sgunz/sosta
   name: sosta
   url: https://github.com/sgunz/sosta
@@ -1765,6 +2316,26 @@
   archived: false
   source: seed
   added: '2026-11-03'
+- id: github:margokapustina/xeniumspatialanalysis
+  name: XeniumSpatialAnalysis
+  url: https://github.com/MargoKapustina/XeniumSpatialAnalysis
+  status: listed
+  category: svg
+  description: R-based Xenium Spatial Analysis Toolkit to assess gene expression gradients
+  language: R
+  platforms:
+  - Xenium
+  paper:
+    doi: 10.1016/j.celrep.2024.113842
+    title: The cell-type-specific spatial organization of the anterior thalamic nuclei of the mouse brain
+    year: 2024
+    preprint: false
+  stars: 38
+  last_push: '2026-08-10'
+  archived: false
+  source: github-search
+  added: '2026-11-03'
+  score: 13
 - id: github:hkim240/cellneighborex
   name: CellNeighborEX
   url: https://github.com/hkim240/CellNeighborEX
@@ -1886,6 +2457,26 @@
   archived: false
   source: seed
   added: '2026-11-03'
+- id: github:ohirose/bcpd
+  name: bcpd
+  url: https://github.com/ohirose/bcpd
+  status: listed
+  category: integration
+  description: Domain Elastic Transform / Bayesian Coherent Point Drift
+  language: C
+  platforms:
+  - MERFISH/MERSCOPE
+  paper:
+    doi: 10.1109/tpami.2026.3733393
+    title: 'Domain Elastic Transform: Bayesian Function Registration for High-Dimensional Scientific Data'
+    year: 2026
+    preprint: false
+  stars: 376
+  last_push: '2026-10-24'
+  archived: false
+  source: github-search
+  added: '2026-11-03'
+  score: 11
 - id: github:wanglab-broad/cast
   name: CAST
   url: https://github.com/wanglab-broad/CAST
@@ -1966,6 +2557,26 @@
   archived: false
   source: seed
   added: '2026-11-03'
+- id: github:keaml-jlu/spatialex
+  name: SpatialEx
+  url: https://github.com/KEAML-JLU/SpatialEx
+  status: listed
+  category: integration
+  description: The source code for "High-Parameter Spatial Multi-Omics through Histology-Anchored Integration"
+  language: Jupyter Notebook
+  platforms:
+  - Xenium
+  paper:
+    doi: 10.1038/s41592-025-02926-6
+    title: High-parameter spatial multi-omics through histology-anchored integration
+    year: 2025
+    preprint: false
+  stars: 39
+  last_push: '2026-05-15'
+  archived: false
+  source: github-search
+  added: '2026-11-03'
+  score: 11
 - id: github:jefworks-lab/stalign
   name: STalign
   url: https://github.com/JEFworks-Lab/STalign
@@ -2159,6 +2770,27 @@
   archived: false
   source: seed
   added: '2026-11-03'
+- id: github:zjufanlab/sccube
+  name: scCube
+  url: https://github.com/ZJUFanLab/scCube
+  status: listed
+  category: benchmarks
+  description: an SRT simulator for simulating multiple spatial variability in spatial resolved transcriptomics and generating unbiased simulated SRT data
+  language: Jupyter Notebook
+  platforms:
+  - MERFISH/MERSCOPE
+  - STARmap
+  paper:
+    doi: 10.1038/s41467-024-49445-0
+    title: Simulating multiple variability in spatially resolved transcriptomics with scCube
+    year: 2024
+    preprint: false
+  stars: 29
+  last_push: '2025-03-11'
+  archived: false
+  source: github-search
+  added: '2026-11-03'
+  score: 11
 - id: github:songdongyuan1994/scdesign3
   name: scDesign3
   url: https://github.com/SONGDONGYUAN1994/scDesign3
@@ -2318,566 +2950,11 @@
   archived: false
   source: seed
   added: '2026-11-03'
-- id: github:zjufanlab/bulk2space
-  name: bulk2space
-  url: https://github.com/ZJUFanLab/bulk2space
-  status: candidate
-  category: general
-  description: a spatial deconvolution method based on deep learning frameworks, which converts bulk transcriptomes into spatially resolved single-cell expression profiles
-  language: Jupyter Notebook
-  platforms:
-  - MERFISH/MERSCOPE
-  - seqFISH
-  - STARmap
-  paper:
-    doi: 10.1038/s41467-022-34271-z
-    title: De novo analysis of bulk RNA-seq data at spatially resolved single-cell resolution
-    year: 2022
-    preprint: false
-  stars: 139
-  last_push: '2023-03-22'
-  archived: false
-  source: github-search
-  added: '2026-11-03'
-  score: 11
-- id: github:lotfollahi-lab/cellbridge
-  name: cellbridge
-  url: https://github.com/Lotfollahi-lab/cellbridge
-  status: candidate
-  category: general
-  description: A framework for fine-grained and reliable phenotyping of single cells from pathology images
-  language: Jupyter Notebook
-  platforms:
-  - Xenium
-  paper:
-    doi: 10.64898/2026.10.20.760347
-    title: Fine-Grained and Reliable Cell Classification from Pathology Images
-    year: 2026
-    preprint: true
-  stars: 27
-  last_push: '2026-10-25'
-  archived: false
-  source: github-search
-  added: '2026-11-03'
-  score: 11
-- id: github:dbjzs/spalp
-  name: SpaLP
-  url: https://github.com/dbjzs/SpaLP
-  status: candidate
-  category: general
-  description: A lightweight, ultrafast and general embedding framework for large-scale spatial omics data
-  language: Python
-  platforms:
-  - Xenium
-  - CosMx
-  - STARmap
-  paper:
-    doi: 10.64898/2026.02.04.703814
-    title: A lightweight, ultrafast and general embedding framework for large-scale spatial omics data
-    year: 2026
-    preprint: true
-  stars: 37
-  last_push: '2026-10-16'
-  archived: false
-  source: github-search
-  added: '2026-11-03'
-  score: 12
-- id: github:genomicai/truecell
-  name: truecell
-  url: https://github.com/GenomicAI/truecell
-  status: candidate
-  category: general
-  description: Pure-Python port of Seurat (v5) — single-cell RNA-seq and spatial transcriptomics analysis (Xenium/Visium/CosMx), built on NumPy/SciPy/AnnData.
-  language: Python
-  platforms:
-  - Xenium
-  - CosMx
-  - MERFISH/MERSCOPE
-  paper:
-    doi: 10.1038/s41587-023-01767-y
-    title: Dictionary learning for integrative, multimodal and scalable single-cell analysis
-    year: 2023
-    preprint: false
-  stars: 15
-  last_push: '2026-10-07'
-  archived: false
-  source: github-search
-  added: '2026-11-03'
-  score: 13
-- id: github:margokapustina/xeniumspatialanalysis
-  name: XeniumSpatialAnalysis
-  url: https://github.com/MargoKapustina/XeniumSpatialAnalysis
-  status: candidate
-  category: general
-  description: R-based Xenium Spatial Analysis Toolkit to assess gene expression gradients
-  language: R
-  platforms:
-  - Xenium
-  paper:
-    doi: 10.1080/15476286.2020.1728961
-    title: 'Single-cell RNA-seq clustering: datasets, models, and algorithms'
-    year: 2020
-    preprint: false
-  stars: 38
-  last_push: '2026-08-10'
-  archived: false
-  source: github-search
-  added: '2026-11-03'
-  score: 13
-- id: github:sanofi-public/enact-pipeline
-  name: enact-pipeline
-  url: https://github.com/Sanofi-Public/enact-pipeline
-  status: candidate
-  category: pipelines
-  description: Repository for ENACT pipeline for end-to-end analysis of Visium HD data
-  language: Python
-  platforms:
-  - Xenium
-  - seqFISH
-  paper:
-    doi: 10.1016/j.mex.2023.102196
-    title: A marker gene-based method for identifying the cell-type of origin from single-cell RNA sequencing data
-    year: 2023
-    preprint: false
-  stars: 83
-  last_push: '2026-02-10'
-  archived: false
-  source: github-search
-  added: '2026-11-03'
-  score: 11
-- id: github:secrierlab/enrichmap
-  name: EnrichMap
-  url: https://github.com/secrierlab/EnrichMap
-  status: candidate
-  category: pipelines
-  description: 'EnrichMap: Spatially-informed enrichment analysis for functional interpretation of spatial transcriptomics.'
-  language: Python
-  platforms:
-  - Xenium
-  - MERFISH/MERSCOPE
-  paper:
-    doi: 10.1038/s41467-023-36439-7
-    title: Genomic and microenvironmental heterogeneity shaping epithelial-to-mesenchymal trajectories in cancer
-    year: 2023
-    preprint: false
-  stars: 17
-  last_push: '2026-10-07'
-  archived: false
-  source: github-search
-  added: '2026-11-03'
-  score: 11
-- id: github:qi2lab/merfish3d-analysis
-  name: merfish3d-analysis
-  url: https://github.com/QI2lab/merfish3d-analysis
-  status: candidate
-  category: pipelines
-  description: GPU accelerated post-processing for 2D or 3D imaging spatial transcriptomics data.
-  language: Python
-  platforms:
-  - MERFISH/MERSCOPE
-  paper:
-    doi: 10.1101/2025.10.10.681751
-    title: GPU-accelerated, self-optimizing processing for 3D multiplexed iterative RNA-FISH experiments
-    year: 2025
-    preprint: true
-  stars: 10
-  last_push: '2026-11-03'
-  archived: false
-  source: github-search
-  added: '2026-11-03'
-  score: 11
-- id: github:anthbapt/mosaik
-  name: MOSAIK
-  url: https://github.com/anthbapt/MOSAIK
-  status: candidate
-  category: pipelines
-  description: Documentation
-  language: Jupyter Notebook
-  platforms:
-  - Xenium
-  - CosMx
-  - MERFISH/MERSCOPE
-  paper:
-    doi: 10.21105/joss.08795
-    title: 'MOSAIK: Multi-Origin Spatial Transcriptomics Analysis and Integration Kit'
-    year: 2026
-    preprint: false
-  stars: 20
-  last_push: '2026-08-28'
-  archived: false
-  source: github-search
-  added: '2026-11-03'
-  score: 11
-- id: github:nf-core/sopa
-  name: sopa
-  url: https://github.com/nf-core/sopa
-  status: candidate
-  category: pipelines
-  description: Nextflow version of Sopa - spatial omics pipeline and analysis
-  language: Nextflow
-  platforms:
-  - Xenium
-  - CosMx
-  - MERFISH/MERSCOPE
-  paper:
-    doi: 10.1038/s41467-024-48981-z
-    title: 'Sopa: a technology-invariant pipeline for analyses of image-based spatial omics'
-    year: 2024
-    preprint: false
-  stars: 22
-  last_push: '2026-11-03'
-  archived: false
-  source: github-search
-  added: '2026-11-03'
-  score: 11
-- id: github:cbib/spaceblocks
-  name: SpaceBlocks
-  url: https://github.com/cbib/SpaceBlocks
-  status: candidate
-  category: pipelines
-  language: Python
-  platforms:
-  - MERFISH/MERSCOPE
-  - Xenium
-  paper:
-    doi: 10.64898/2026.10.30.763100
-    title: 'SpaceBlocks: an expert-supervised workflow for cohort-level spatial transcriptomics analysis'
-    year: 2026
-    preprint: true
-  stars: 5
-  last_push: '2026-11-03'
-  archived: false
-  source: europepmc
-  added: '2026-11-03'
-- id: github:nf-core/spatialaxe
-  name: spatialaxe
-  url: https://github.com/nf-core/spatialaxe
-  status: candidate
-  category: pipelines
-  description: A bioinformatics best-practice processing and quality control pipeline for Xenium and Artera data
-  language: Python
-  platforms:
-  - Xenium
-  paper:
-    doi: 10.1038/s41587-021-01044-w
-    title: Cell segmentation in imaging-based spatial transcriptomics
-    year: 2021
-    preprint: false
-  stars: 46
-  last_push: '2026-10-26'
-  archived: false
-  source: github-search
-  added: '2026-11-03'
-  score: 14
-- id: github:sanofi-public/spatialone-pipeline
-  name: spatialone-pipeline
-  url: https://github.com/Sanofi-Public/spatialone-pipeline
-  status: candidate
-  category: pipelines
-  description: Spatial One
-  language: Python
-  platforms:
-  - Xenium
-  - CosMx
-  paper:
-    doi: 10.1093/bioinformatics/btae509
-    title: 'SpatialOne: end-to-end analysis of visium data at scale'
-    year: 2024
-    preprint: false
-  stars: 32
-  last_push: '2024-10-31'
-  archived: false
-  source: github-search
-  added: '2026-11-03'
-  score: 12
-- id: github:l-zh007/spatialsnake
-  name: spatialsnake
-  url: https://github.com/l-zh007/spatialsnake
-  status: candidate
-  category: pipelines
-  description: A Snakemake workflow for spatial transcriptomics
-  language: Python
-  platforms:
-  - MERFISH/MERSCOPE
-  - Xenium
-  paper:
-    doi: 10.64898/2026.10.27.762082
-    title: 'Spatialsnake: a flexible workflow for spatial transcriptomics analysis across platforms'
-    year: 2026
-    preprint: true
-  stars: 2
-  last_push: '2026-11-02'
-  archived: false
-  source: europepmc
-  added: '2026-11-03'
-  note: repo matched to paper by name only - check it is the right one
-- id: github:sggb0nd/step
-  name: step
-  url: https://github.com/SGGb0nd/step
-  status: candidate
-  category: pipelines
-  description: 'Public repo for STEP: Spatial Transcriptomics Embedding Procedure'
-  language: Python
-  platforms:
-  - MERFISH/MERSCOPE
-  - STARmap
-  paper:
-    doi: 10.1101/2024.04.15.589470
-    title: 'STEP: Spatial Transcriptomics Embedding Procedure for Multi-scale Biological Heterogeneities Revelation in Multiple Samples'
-    year: 2024
-    preprint: true
-  stars: 18
-  last_push: '2026-08-06'
-  archived: false
-  source: github-search
-  added: '2026-11-03'
-  score: 11
-- id: github:gerstung-lab/basiss
-  name: BaSISS
-  url: https://github.com/gerstung-lab/BaSISS
-  status: candidate
-  category: viewers
-  description: Code for the "Spatial genomics maps the structure, nature and evolution of cancer clones" paper
-  language: Jupyter Notebook
-  platforms:
-  - ISS
-  paper:
-    doi: 10.1101/2021.04.16.439912
-    title: Spatial genomics maps the structure, character and evolution of cancer clones
-    year: 2021
-    preprint: true
-  stars: 27
-  last_push: '2022-11-21'
-  archived: false
-  source: github-search
-  added: '2026-11-03'
-  score: 11
-- id: github:interactivereport/cellxgene_vip
-  name: cellxgene_VIP
-  url: https://github.com/interactivereport/cellxgene_VIP
-  status: candidate
-  category: viewers
-  description: Enables cellxgene to generate violin, stacked violin, stacked bar, heatmap, volcano, embedding, dot, track, density, 2D density, sankey and dual-gene plot in high-resolution SVG/PNG format. It also performs differential gene expression analysis and provides a Command Line Interface (CLI) for advanced users to perform analysis using python and R.
-  language: Jupyter Notebook
-  platforms:
-  - CosMx
-  paper:
-    doi: 10.1101/2020.08.28.270652
-    title: Cellxgene VIP unleashes full power of interactive visualization and integrative analysis of scRNA-seq, spatial transcriptomics, and multiome data
-    year: 2020
-    preprint: true
-  stars: 165
-  last_push: '2026-06-23'
-  archived: false
-  source: github-search
-  added: '2026-11-03'
-  score: 11
-- id: github:lilab-bcb/cirrocumulus
-  name: cirrocumulus
-  url: https://github.com/lilab-bcb/cirrocumulus
-  status: candidate
-  category: viewers
-  description: Bring your single-cell data to life
-  language: JavaScript
-  platforms:
-  - Xenium
-  - MERFISH/MERSCOPE
-  paper:
-    doi: 10.1101/2023.03.06.531121
-    title: A high-resolution transcriptomic and spatial atlas of cell types in the whole mouse brain
-    year: 2023
-    preprint: true
-  stars: 102
-  last_push: '2026-11-02'
-  archived: false
-  source: github-search
-  added: '2026-11-03'
-  score: 12
-- id: github:gear-genomics/dicey
-  name: dicey
-  url: https://github.com/gear-genomics/dicey
-  status: candidate
-  category: viewers
-  description: In-silico PCR, primer design and padlock design for in-situ sequencing
-  language: C++
-  platforms:
-  - ISS
-  paper:
-    doi: 10.1093/nar/gkag445
-    title: 'GEAR Genomics: a user-friendly, open-source web platform enabling interactive genomic analysis for molecular biologists'
-    year: 2026
-    preprint: false
-  stars: 55
-  last_push: '2026-08-19'
-  archived: false
-  source: github-search
-  added: '2026-11-03'
-  score: 12
-- id: github:chaichontat/samui
-  name: samui
-  url: https://github.com/chaichontat/samui
-  status: candidate
-  category: viewers
-  description: A performant scientific image visualization system.
-  language: TypeScript
-  platforms:
-  - MERFISH/MERSCOPE
-  paper:
-    doi: 10.1101/2023.01.28.525943
-    title: Performant web-based interactive visualization tool for spatially-resolved transcriptomics experiments
-    year: 2023
-    preprint: true
-  stars: 37
-  last_push: '2026-08-05'
-  archived: false
-  source: github-search
-  added: '2026-11-03'
-  score: 11
-- id: github:jefworks-lab/veloviz
-  name: veloviz
-  url: https://github.com/JEFworks-Lab/veloviz
-  status: candidate
-  category: viewers
-  description: RNA-velocity informed embeddings for visualizing cellular trajectories
-  language: R
-  platforms:
-  - MERFISH/MERSCOPE
-  paper:
-    doi: 10.1101/2021.01.28.425293
-    title: 'VeloViz: RNA-velocity informed embeddings for visualizing cellular trajectories'
-    year: 2021
-    preprint: true
-  stars: 45
-  last_push: '2022-09-05'
-  archived: false
-  source: github-search
-  added: '2026-11-03'
-  score: 11
-- id: github:fish-quant/rna2seg
-  name: rna2seg
-  url: https://github.com/fish-quant/rna2seg
-  status: candidate
-  category: segmentation
-  description: rna2seg
-  language: Python
-  paper:
-    doi: 10.1101/2025.03.03.641259
-    title: 'RNA2seg: a generalist model for cell segmentation in image-based spatial transcriptomics'
-    year: 2025
-    preprint: true
-  stars: 25
-  last_push: '2025-05-15'
-  archived: false
-  source: github-search
-  added: '2026-11-03'
-  score: 11
-- id: github:wenwenmin/spacut
-  name: SpaCut
-  url: https://github.com/wenwenmin/SpaCut
-  status: candidate
-  category: segmentation
-  description: 'SpaCut: Transcript-aware Morphology Fusion for Robust Cell Segmentation in Subcellular Spatial Transcriptomics'
-  language: Jupyter Notebook
-  platforms:
-  - CosMx
-  - MERFISH/MERSCOPE
-  - Xenium
-  paper:
-    doi: 10.1002/advs.78423
-    title: 'SpaCut: Transcript-Aware Morphology Fusion for Robust Cell Segmentation in Subcellular Spatial Transcriptomics'
-    year: 2026
-    preprint: false
-  stars: 3
-  last_push: '2026-10-17'
-  archived: false
-  source: europepmc
-  added: '2026-11-03'
-- id: github:ankitbioinfo/nico_tutorial
-  name: nico_tutorial
-  url: https://github.com/ankitbioinfo/nico_tutorial
-  status: candidate
-  category: annotation
-  description: A package that performs cell type annotations on single cell resolution of spatial transcriptomics data, find the niche interactions and statistically enriched covariation of gene programs between interacting cell types from the neighborhood.
-  language: Jupyter Notebook
-  platforms:
-  - Xenium
-  - MERFISH/MERSCOPE
-  - seqFISH
-  stars: 19
-  last_push: '2026-09-25'
-  archived: false
-  source: github-search
-  added: '2026-11-03'
-  score: 11
-- id: github:p-gueguen/rctd-py
-  name: rctd-py
-  url: https://github.com/p-gueguen/rctd-py
-  status: candidate
-  category: annotation
-  description: GPU-accelerated RCTD for spatial transcriptomics
-  language: Python
-  platforms:
-  - Xenium
-  - CosMx
-  - MERFISH/MERSCOPE
-  paper:
-    doi: 10.1038/s41587-021-00830-w
-    title: Robust decomposition of cell type mixtures in spatial transcriptomics
-    year: 2021
-    preprint: false
-  stars: 66
-  last_push: '2026-11-02'
-  archived: false
-  source: github-search
-  added: '2026-11-03'
-  score: 11
-- id: github:maier-lab/ripple
-  name: RIPPLE
-  url: https://github.com/Maier-Lab/RIPPLE
-  status: candidate
-  category: annotation
-  description: RIPPLE - Spatial transcriptomics analysis of a cell's influence on its neighbors' transcriptome
-  language: R
-  platforms:
-  - Xenium
-  - CosMx
-  - MERFISH/MERSCOPE
-  paper:
-    doi: 10.64898/2026.07.23.740288
-    title: 'RIPPLE: replicate-aware detection of cell-type-anchored proximity gradients in spatial transcriptomics'
-    year: 2026
-    preprint: true
-  stars: 41
-  last_push: '2026-09-14'
-  archived: false
-  source: github-search
-  added: '2026-11-03'
-  score: 11
-- id: github:lieberinstitute/spatialdlpfc
-  name: spatialDLPFC
-  url: https://github.com/LieberInstitute/spatialDLPFC
-  status: candidate
-  category: annotation
-  description: spatialDLPFC project involving Visium (n = 30), Visium SPG (n = 4) and snRNA-seq (n = 19) samples
-  language: HTML
-  platforms:
-  - smFISH
-  paper:
-    doi: 10.1038/s41593-020-00787-0
-    title: Transcriptome-scale spatial gene expression in the human dorsolateral prefrontal cortex
-    year: 2021
-    preprint: false
-  stars: 37
-  last_push: '2026-08-14'
-  archived: false
-  source: github-search
-  added: '2026-11-03'
-  score: 11
 - id: doi:10.64898/2026.10.13.756865
   name: X-SPEAR
   url: https://doi.org/10.64898/2026.10.13.756865
   status: candidate
-  category: annotation
+  category: panel
   description: 'X-SPEAR: An Extensible Framework for Spatial Panel Evaluation and Refinement'
   platforms:
   - Xenium
@@ -2889,52 +2966,11 @@
   source: europepmc
   added: '2026-11-03'
   note: no code repository found yet
-- id: github:mims-harvard/concert
-  name: CONCERT
-  url: https://github.com/mims-harvard/CONCERT
-  status: candidate
-  category: imputation
-  description: Generative modeling of spatially resolved perturbation responses with CONCERT
-  language: Jupyter Notebook
-  platforms:
-  - MERFISH/MERSCOPE
-  paper:
-    doi: 10.1016/j.cell.2026.04.049
-    title: Uncovering spatially resolved functional genomics with CRISPR screen sequencing
-    year: 2026
-    preprint: false
-  stars: 29
-  last_push: '2026-10-18'
-  archived: false
-  source: github-search
-  added: '2026-11-03'
-  score: 11
-- id: github:prabhakarlab/banksy_py
-  name: Banksy_py
-  url: https://github.com/prabhakarlab/Banksy_py
-  status: candidate
-  category: domains
-  description: 'BANKSY: Spatial Clustering Algorithm that Unifies Cell-Typing and Tissue Domain Segmentation. Python package for spatial transcriptomics analysis.'
-  language: Jupyter Notebook
-  platforms:
-  - MERFISH/MERSCOPE
-  - STARmap
-  paper:
-    doi: 10.1038/s41588-024-01664-3
-    title: BANKSY unifies cell typing and tissue domain segmentation for scalable spatial omics data analysis
-    year: 2024
-    preprint: false
-  stars: 105
-  last_push: '2026-10-28'
-  archived: false
-  source: github-search
-  added: '2026-11-03'
-  score: 12
 - id: doi:10.64898/2026.10.15.759369
   name: BiNVaST
   url: https://doi.org/10.64898/2026.10.15.759369
   status: candidate
-  category: domains
+  category: annotation
   description: 'BiNVaST: niche boundary-preserving and synthetic data-guided variational autoencoders for concordant inference across high-resolution spatial transcriptomic platforms'
   platforms:
   - Xenium
@@ -2947,90 +2983,11 @@
   source: europepmc
   added: '2026-11-03'
   note: no code repository found yet
-- id: github:barondu/cosmim
-  name: cosmim
-  url: https://github.com/barondu/cosmim
-  status: candidate
-  category: domains
-  description: 'CoSMIM: redefining the niche as multi-scale neighbourhood gene covariance for training-free spatial-domain identification'
-  language: Jupyter Notebook
-  platforms:
-  - MERFISH/MERSCOPE
-  - STARmap
-  - Xenium
-  - smFISH
-  paper:
-    doi: 10.64898/2026.10.20.760373
-    title: Multi-scale microenvironment covariance for unsupervised spatial domain identification
-    year: 2026
-    preprint: true
-  stars: 0
-  last_push: '2026-10-27'
-  archived: false
-  source: europepmc
-  added: '2026-11-03'
-- id: github:jiangbiolab/deepst
-  name: DeepST
-  url: https://github.com/JiangBioLab/DeepST
-  status: candidate
-  category: domains
-  description: Identify spatial domain
-  language: Jupyter Notebook
-  platforms:
-  - MERFISH/MERSCOPE
-  paper:
-    doi: 10.1101/2021.01.17.427004
-    title: Spatiotemporal transcriptomic atlas of mouse organogenesis using DNA nanoball patterned arrays
-    year: 2021
-    preprint: true
-  stars: 92
-  last_push: '2025-05-29'
-  archived: false
-  source: github-search
-  added: '2026-11-03'
-  score: 10
-- id: github:raphael-group/gaston
-  name: GASTON
-  url: https://github.com/raphael-group/GASTON
-  status: candidate
-  category: domains
-  description: 'GASTON: deep learning algorithm learns "topography" of a tissue slice from spatial transcriptomics data'
-  language: Python
-  platforms:
-  - Xenium
-  - MERFISH/MERSCOPE
-  paper:
-    doi: 10.1038/s41592-024-02503-3
-    title: Mapping the topography of spatial gene expression with interpretable deep learning
-    year: 2025
-    preprint: false
-  stars: 76
-  last_push: '2025-12-01'
-  archived: false
-  source: github-search
-  added: '2026-11-03'
-  score: 11
-- id: doi:10.64898/2026.10.26.761813
-  name: Kontext
-  url: https://doi.org/10.64898/2026.10.26.761813
-  status: candidate
-  category: domains
-  description: 'Kontext: Kernel-based method bridging spatial domain identification and cell-cell communication'
-  platforms:
-  - Xenium
-  paper:
-    doi: 10.64898/2026.10.26.761813
-    title: 'Kontext: Kernel-based method bridging spatial domain identification and cell-cell communication'
-    year: 2026
-    preprint: true
-  source: europepmc
-  added: '2026-11-03'
-  note: no code repository found yet
 - id: doi:10.64898/2026.10.23.761453
   name: NicheCorr
   url: https://doi.org/10.64898/2026.10.23.761453
   status: candidate
-  category: domains
+  category: svg
   description: 'NicheCorr: Identifying Niche-Specific Differential Gene Co-Expression in Spatial Transcriptomics'
   platforms:
   - Xenium
@@ -3043,271 +3000,98 @@
   source: europepmc
   added: '2026-11-03'
   note: no code repository found yet
-- id: github:luxin-heart/tracer
-  name: TRACER
-  url: https://github.com/luxin-heart/TRACER
-  status: candidate
-  category: domains
-  description: The core code for TRACER
-  language: Jupyter Notebook
-  platforms:
-  - STARmap
-  - smFISH
-  paper:
-    doi: 10.1093/bioinformatics/btag805
-    title: 'TRACER: Twin-contrastive learning for fine-grained and rare spatial domain identification in spatial transcriptomics'
-    year: 2026
-    preprint: false
-  stars: 2
-  last_push: '2026-05-15'
-  archived: false
-  source: europepmc
-  added: '2026-11-03'
-- id: github:pachterlab/spatialfeatureexperiment
-  name: SpatialFeatureExperiment
-  url: https://github.com/pachterlab/SpatialFeatureExperiment
-  status: candidate
-  category: stats
-  description: Extension of SpatialExperiment with sf
-  language: R
-  platforms:
-  - ISS
-  - smFISH
-  paper:
-    doi: 10.1101/2023.07.20.549945
-    title: 'Voyager: exploratory single-cell genomics data analysis with geospatial statistics'
-    year: 2023
-    preprint: true
-  stars: 59
-  last_push: '2026-11-02'
-  archived: false
-  source: github-search
-  added: '2026-11-03'
-  score: 12
 - id: github:ratschlab/aestetik
   name: aestetik
   url: https://github.com/ratschlab/aestetik
-  status: candidate
-  category: integration
-  description: 'AESTETIK: Convolutional autoencoder for learning spot representations from spatial transcriptomics and morphology data'
-  language: Jupyter Notebook
-  platforms:
-  - Xenium
-  paper:
-    doi: 10.1101/2024.06.04.24308256
-    title: Representation learning for multi-modal spatially resolved transcriptomics data
-    year: 2024
-    preprint: true
-  stars: 28
-  last_push: '2026-08-18'
-  archived: false
-  source: github-search
-  added: '2026-11-03'
-  score: 11
+  status: rejected
+  note: Visium spot representations; no imaging-based support named
+- id: github:prism-oncology/alhena
+  name: ALHENA
+  url: https://github.com/prism-oncology/ALHENA
+  status: rejected
+  note: Predicts from H&E; Xenium is only training data, so it does not analyse in situ data
 - id: doi:10.64898/2026.10.20.760439
   name: ALHENA, an H&E encoder distilled from transcriptomic foundation models
   url: https://doi.org/10.64898/2026.10.20.760439
-  status: candidate
-  category: integration
-  description: ALHENA, an H&E encoder distilled from transcriptomic foundation models for multi-scale slide analysis
-  platforms:
-  - Xenium
-  paper:
-    doi: 10.64898/2026.10.20.760439
-    title: ALHENA, an H&E encoder distilled from transcriptomic foundation models for multi-scale slide analysis
-    year: 2026
-    preprint: true
-  source: europepmc
-  added: '2026-11-03'
-  note: no code repository found yet
-- id: github:ohirose/bcpd
-  name: bcpd
-  url: https://github.com/ohirose/bcpd
-  status: candidate
-  category: integration
-  description: Domain Elastic Transform / Bayesian Coherent Point Drift
-  language: C
-  platforms:
-  - MERFISH/MERSCOPE
-  paper:
-    doi: 10.1109/tpami.2026.3733393
-    title: 'Domain Elastic Transform: Bayesian Function Registration for High-Dimensional Scientific Data'
-    year: 2026
-    preprint: false
-  stars: 376
-  last_push: '2026-10-24'
-  archived: false
-  source: github-search
-  added: '2026-11-03'
-  score: 11
-- id: github:haojiawu/cellscopes.jl
-  name: CellScopes.jl
-  url: https://github.com/HaojiaWu/CellScopes.jl
-  status: candidate
-  category: integration
-  description: A Julia package for single cell and spatial data analysis
-  language: Julia
-  platforms:
-  - Xenium
-  - MERFISH/MERSCOPE
-  - seqFISH
-  - STARmap
-  - ISS
-  stars: 47
-  last_push: '2025-08-07'
-  archived: false
-  source: github-search
-  added: '2026-11-03'
-  score: 11
-- id: github:digitalcytometry/cytospace
-  name: cytospace
-  url: https://github.com/digitalcytometry/cytospace
-  status: candidate
-  category: integration
-  description: 'CytoSPACE: Optimal mapping of scRNA-seq data to spatial transcriptomics data'
-  language: Python
-  platforms:
-  - MERFISH/MERSCOPE
-  paper:
-    doi: 10.1126/science.aaw1219
-    title: 'Slide-seq: A scalable technology for measuring genome-wide expression at high spatial resolution'
-    year: 2019
-    preprint: false
-  stars: 153
-  last_push: '2025-02-20'
-  archived: false
-  source: github-search
-  added: '2026-11-03'
-  score: 10
+  status: rejected
+  note: 'Predicts from H&E; Xenium is only training data, so it does not analyse in situ data. Code: prism-oncology/ALHENA'
+- id: github:prabhakarlab/banksy_py
+  name: Banksy_py
+  url: https://github.com/prabhakarlab/Banksy_py
+  status: rejected
+  note: Python version of the listed BANKSY; linked from its description
+- id: github:gerstung-lab/basiss
+  name: BaSISS
+  url: https://github.com/gerstung-lab/BaSISS
+  status: rejected
+  note: Analysis code for one paper
+- id: github:zjufanlab/bulk2space
+  name: bulk2space
+  url: https://github.com/ZJUFanLab/bulk2space
+  status: rejected
+  note: Bulk RNA-seq deconvolution; image-based data is only an optional spatial reference
+- id: github:lotfollahi-lab/cellbridge
+  name: cellbridge
+  url: https://github.com/Lotfollahi-lab/cellbridge
+  status: rejected
+  note: Predicts from H&E; Xenium is only training data, so it does not analyse in situ data
 - id: github:ratschlab/deepspot
   name: DeepSpot
   url: https://github.com/ratschlab/DeepSpot
-  status: candidate
-  category: integration
-  description: 'DeepSpot: Deep learning model for predicting spatial transcriptomics from H&E histopathology images. Supports spot-level (Visium) and single-cell (Xenium) resolution.'
-  language: Jupyter Notebook
-  platforms:
-  - Xenium
-  paper:
-    doi: 10.1101/2025.02.09.25321567
-    title: 'DeepSpot: Leveraging Spatial Context for Enhanced Spatial Transcriptomics Prediction from H&amp;E Images'
-    year: 2025
-    preprint: true
-  stars: 105
-  last_push: '2026-11-02'
-  archived: false
-  source: github-search
-  added: '2026-11-03'
-  score: 14
+  status: rejected
+  note: Predicts from H&E; Xenium is only training data, so it does not analyse in situ data
 - id: github:ratschlab/deepspotm
   name: DeepSpotM
   url: https://github.com/ratschlab/DeepSpotM
-  status: candidate
-  category: integration
-  description: Multimodal foundation model predicting transcriptome-wide virtual spatial transcriptomics from histology.
-  language: Python
-  platforms:
-  - Xenium
-  paper:
-    doi: 10.64898/2026.06.19.26356060
-    title: 'DeepSpot-M: a multimodal foundation model for transcriptome-wide virtual spatial transcriptomics from histology'
-    year: 2026
-    preprint: true
-  stars: 60
-  last_push: '2026-09-04'
-  archived: false
-  source: github-search
-  added: '2026-11-03'
-  score: 11
-- id: github:camlab-bioml/rakaia
-  name: rakaia
-  url: https://github.com/camlab-bioml/rakaia
-  status: candidate
-  category: integration
-  description: Scalable spatial omics in the browser for hundreds of samples at once | 10x, IMC, IF, H&E, CosMX, & more | https://rakaia.io/
-  language: Python
-  platforms:
-  - Xenium
-  - CosMx
-  stars: 73
-  last_push: '2026-11-03'
-  archived: false
-  source: github-search
-  added: '2026-11-03'
-  score: 12
-- id: github:keaml-jlu/spatialex
-  name: SpatialEx
-  url: https://github.com/KEAML-JLU/SpatialEx
-  status: candidate
-  category: integration
-  description: The source code for "High-Parameter Spatial Multi-Omics through Histology-Anchored Integration"
-  language: Jupyter Notebook
-  platforms:
-  - Xenium
-  paper:
-    doi: 10.1101/2024.12.05.626986
-    title: 'NicheTrans: Spatial-aware Cross-omics Translation'
-    year: 2024
-    preprint: true
-  stars: 39
-  last_push: '2026-05-15'
-  archived: false
-  source: github-search
-  added: '2026-11-03'
-  score: 11
-- id: github:abbasilab/celltransformer
-  name: celltransformer
-  url: https://github.com/abbasilab/celltransformer
-  status: candidate
-  category: foundation
-  description: Transformer based region discovery in spatial transcriptomics (but mostly MERFISH) datasets
-  language: Jupyter Notebook
-  platforms:
-  - MERFISH/MERSCOPE
-  stars: 20
-  last_push: '2025-03-14'
-  archived: false
-  source: github-search
-  added: '2026-11-03'
-  score: 11
+  status: rejected
+  note: Predicts from H&E; Xenium is only training data, so it does not analyse in situ data
+- id: github:jiangbiolab/deepst
+  name: DeepST
+  url: https://github.com/JiangBioLab/DeepST
+  status: rejected
+  note: Visium and H&E focused; MERFISH appears only in a dataset table
+- id: github:sanofi-public/enact-pipeline
+  name: enact-pipeline
+  url: https://github.com/Sanofi-Public/enact-pipeline
+  status: rejected
+  note: Visium HD only
+- id: github:ankitbioinfo/nico_tutorial
+  name: nico_tutorial
+  url: https://github.com/ankitbioinfo/nico_tutorial
+  status: rejected
+  note: Listed as NiCo through gruenlab/nico-wrapper, which this repo's README recommends for new analyses
 - id: github:cantinilab/scprint-2
   name: scPRINT-2
   url: https://github.com/cantinilab/scPRINT-2
-  status: candidate
-  category: foundation
-  description: 🏃🏃 Your next-gen single-cell Foundation Model
-  language: Jupyter Notebook
-  platforms:
-  - Xenium
-  paper:
-    doi: 10.64898/2025.12.11.693702
-    title: 'scPRINT-2: Towards the next-generation of cell foundation models and benchmarks'
-    year: 2025
-    preprint: true
-  stars: 41
-  last_push: '2026-09-26'
-  archived: false
-  source: github-search
-  added: '2026-11-03'
-  score: 11
-- id: github:zjufanlab/sccube
-  name: scCube
-  url: https://github.com/ZJUFanLab/scCube
-  status: candidate
-  category: benchmarks
-  description: an SRT simulator for simulating multiple spatial variability in spatial resolved transcriptomics and generating unbiased simulated SRT data
-  language: Jupyter Notebook
-  platforms:
-  - MERFISH/MERSCOPE
-  - STARmap
-  paper:
-    doi: 10.1038/s41467-024-49445-0
-    title: Simulating multiple variability in spatially resolved transcriptomics with scCube
-    year: 2024
-    preprint: false
-  stars: 29
-  last_push: '2025-03-11'
-  archived: false
-  source: github-search
-  added: '2026-11-03'
-  score: 11
+  status: rejected
+  note: scRNA-seq foundation model; Xenium appears only in figure notebooks
+- id: github:nf-core/sopa
+  name: sopa
+  url: https://github.com/nf-core/sopa
+  status: rejected
+  note: Nextflow version of the listed Sopa; linked from its description
+- id: github:lieberinstitute/spatialdlpfc
+  name: spatialDLPFC
+  url: https://github.com/LieberInstitute/spatialDLPFC
+  status: rejected
+  note: Visium and snRNA-seq study repository, not a tool
+- id: github:sanofi-public/spatialone-pipeline
+  name: spatialone-pipeline
+  url: https://github.com/Sanofi-Public/spatialone-pipeline
+  status: rejected
+  note: Visium; Xenium and CosMx are only future work in its README
+- id: github:luxin-heart/tracer
+  name: TRACER
+  url: https://github.com/luxin-heart/TRACER
+  status: rejected
+  note: Core code only, the rest promised after acceptance; demo is a Visium slice
+- id: doi:10.1093/bioinformatics/btag805
+  name: TRACER
+  url: https://doi.org/10.1093/bioinformatics/btag805
+  status: rejected
+  note: Paper for the rejected github:luxin-heart/tracer
+- id: github:jefworks-lab/veloviz
+  name: veloviz
+  url: https://github.com/JEFworks-Lab/veloviz
+  status: rejected
+  note: RNA-velocity embedding; MERFISH is one example page
