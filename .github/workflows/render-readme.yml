@@ -1,0 +1,45 @@
+name: Render README
+
+# Re-renders README.md whenever the list or the scripts change, on any branch
+# (including review edits made on the weekly PR branch). Fails if tools.yaml is invalid.
+on:
+  push:
+    paths:
+      - "data/**"
+      - "config/**"
+      - "scripts/**"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: render-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Validate tools.yaml and render README
+        run: python scripts/build_readme.py
+
+      - name: Commit README if it changed
+        run: |
+          if git diff --quiet README.md; then
+            echo "README already up to date"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Re-render README from data/tools.yaml" README.md
+          git push

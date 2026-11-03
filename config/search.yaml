@@ -1,0 +1,162 @@
+# Search and classification settings for scripts/discover.py and scripts/add.py.
+# All matching is case-insensitive regex against name, description, topics and README.
+
+# Platform tags shown in the "Platforms" column. A repo or paper must match at
+# least one platform or one generic term below to count as imaging-based.
+platforms:
+  Xenium: ['\bxenium']
+  CosMx: ['\bcosmx', 'spatial molecular imag']
+  MERFISH/MERSCOPE: ['\bmerfish', '\bmerscope', '\bvizgen']
+  seqFISH: ['\bseqfish']
+  STARmap: ['\bstarmap']
+  ISS: ['in[ -]situ sequencing', '\bhybiss\b', '\bcartana\b', '\biss[- ](data|experiment|decod|pipeline)']
+  Molecular Cartography: ['molecular cartography', 'resolve biosciences']
+  smFISH: ['\bsmfish', '\bosmfish', 'single[- ]molecule fish', '\beel[ -]?fish']
+  ExSeq/FISSEQ: ['\bexseq\b', '\bfisseq\b']
+
+generic_terms:
+  - 'imag(e|ing)[- ]based spatial'
+  - 'in[ -]situ transcriptomic'
+  - 'subcellular[- ]resolution spatial'
+  - 'targeted spatial transcriptomic'
+  - 'spatial transcriptomics.{0,40}(imaging|in situ)'
+
+# Text must also be about biology, so e.g. Xbox "Xenium" emulators and astronomy
+# "starmap" repos drop out.
+context_terms: ['transcriptom', 'gene expression', 'single[- ]cell', 'omics', '\bm?rna\b', 'cell[- ]types?', 'tissue']
+
+github:
+  queries:
+    - 'xenium'
+    - 'cosmx'
+    - 'merfish'
+    - 'merscope'
+    - 'seqfish'
+    - 'starmap spatial'
+    - '"in situ sequencing"'
+    - '"imaging-based spatial transcriptomics"'
+    - '"image-based spatial transcriptomics"'
+    - '"in situ transcriptomics"'
+    - '"molecular cartography"'
+    - '"single-molecule FISH" spatial'
+  topic_queries: ['xenium', 'merfish', 'cosmx', 'spatial-transcriptomics']
+  # Repos need this many stars; brand-new tools usually arrive via their preprint.
+  min_stars: 10
+  # Heuristic score a repo needs to become a candidate (see score_repo()).
+  min_score: 5
+  max_candidates_per_run: 40
+
+europepmc:
+  # Platform terms searched in abstracts; papers must also look like a method,
+  # tool, benchmark or resource (title/abstract words), or link code.
+  abstract_terms: ['xenium', 'cosmx', 'merfish', 'merscope', 'seqfish', 'starmap',
+                   'in situ sequencing', 'imaging-based spatial transcriptomics',
+                   'image-based spatial transcriptomics', 'spatial molecular imaging',
+                   'single-molecule FISH', 'in situ transcriptomics']
+  method_title_terms: ['tool', 'package', 'software', 'framework', 'method', 'algorithm',
+                       'pipeline', 'benchmark', 'toolkit', 'workflow', 'model', 'resource',
+                       'database', 'atlas of methods', 'platform']
+  method_abstract_phrases: ['we present', 'we develop', 'we introduce', 'we propose']
+  max_candidates_per_run: 40
+
+# Repos never proposed (this list itself, and lists linked under Related resources).
+exclude_repos:
+  - amnahsiddiqa/imaging-spatial-tx-tools
+  - p-gueguen/spatial_transcriptomics_tools
+  - crazyhottommy/awesome_spatial_omics
+
+# Name/description patterns that suggest a one-off analysis rather than a tool.
+analysis_repo_patterns:
+  - 'analysis (code|scripts) (for|of)'
+  - 'code (accompanying|to reproduce)|companion'
+  - 'reproduc'
+  - 'figures? (for|of|in)'
+  - '\b(thesis|homework|assignment|hackathon)\b'
+  - '\bmy[-_ ]'
+  - 'portfolio|lab rotation|capstone|course project'
+  - 'code (and data )?(sharing|depository) (of|for)'
+  - '[-_](analyses|paper|manuscript|figures)\b'
+
+# Lists, paper feeds and notes: never proposed (checked on name/description/topics
+# and the first 600 characters of the README).
+list_patterns:
+  - '\bawesome\b'
+  - 'curated (list|collection|repository)'
+  - '(list|collection) of (tools|papers|resources|implementations|datasets)'
+  - '(daily|weekly) arxiv|arxiv (daily|papers)|paper (digest|list|reading)'
+  - 'tools and papers|papers and tools|analysis notes'
+
+# Phrases near the top of a README that suggest a one-off analysis (a smaller
+# penalty, since tool READMEs also point to their paper's reproduction code).
+analysis_readme_patterns:
+  - 'this (repository|repo) (contains|hosts|includes) (the |all )?(analys[ie]s|scripts|notebooks) (for|of|used)'
+  - '(code|scripts|notebooks) (used )?(to|for) (reproduce|generate|recreate)'
+  - 'reproduc(e|ing) (the )?(figures|results|analys)'
+
+# Categories, in README order. Keywords score name/description/topics (x3),
+# paper title/abstract (x2) and the README head (x1, at most 2 per category); the top score wins,
+# ties go to the earlier category, and a best score under 2 is Uncategorised.
+categories:
+  - id: general
+    title: General Frameworks & Toolkits
+    keywords: ['toolkit', 'framework', 'analysis suite', 'end-to-end analysis', 'all-in-one', 'ecosystem']
+  - id: pipelines
+    title: Pipelines & Workflows
+    keywords: ['pipeline', 'workflow', 'nextflow', 'snakemake', 'nf-core', 'post-?processing']
+  - id: io
+    title: Data Formats, Readers & Conversion
+    keywords: ['reader', '\bi/o\b', 'convert', 'file format', 'zarr', 'loader', 'import (xenium|cosmx|merscope)', 'data structure']
+  - id: viewers
+    title: Viewers & Visualization
+    keywords: ['viewer', 'visuali[sz]', 'interactive', 'explorer', 'napari', 'web app', 'dashboard', 'plotting']
+  - id: panel
+    title: Panel & Probe Design
+    keywords: ['panel design', 'gene panel', 'probe design', 'panel selection', 'off-target', 'probe sequence', 'gene selection']
+  - id: decoding
+    title: Image Processing, Spot Detection & Decoding
+    keywords: ['decod', 'spot detection', 'spot calling', 'barcode', 'codebook', 'rolling circle', 'puncta', 'image processing', 'deconvolution microscopy', 'rna spots?']
+  - id: segmentation
+    title: Cell Segmentation
+    keywords: ['segment', 'boundar', 'nucle(us|i) mask', 'cell mask', 'polygons?', 'cellpose', 'resegment']
+  - id: subcellular
+    title: Segmentation-free & Subcellular Analysis
+    keywords: ['segmentation[- ]free', 'subcellular', 'transcript localization', 'rna localization', 'transcript[- ]level', 'cell[- ]free', 'extracellular transcripts']
+  - id: qc
+    title: Quality Control
+    keywords: ['quality control', '\bqc\b', 'artifacts?', 'artefacts?', 'false discovery', 'signal[- ]to[- ]noise', 'doublet', 'contamination', 'quality metric']
+  - id: normalization
+    title: Normalization, Denoising & Correction
+    keywords: ['normali[sz]', 'denois', 'batch correction', 'background correction', 'diffusion correction', 'spillover', 'purif']
+  - id: annotation
+    title: Cell Type Annotation & Label Transfer
+    keywords: ['annotat', 'cell[- ]type', 'label transfer', 'cell typing', 'reference mapping', 'cell identit']
+  - id: imputation
+    title: Gene Imputation & scRNA-seq Mapping
+    keywords: ['imput', 'unmeasured genes', 'whole[- ]transcriptome', 'map(ping)? single[- ]cell', 'expression prediction', 'gene expression prediction']
+  - id: domains
+    title: Spatial Domains & Niches
+    keywords: ['domain', 'niche', 'microenvironment', 'cellular communit', 'tissue region', 'spatial cluster', 'neighbou?rhood composition']
+  - id: stats
+    title: Spatial Statistics & Neighbourhood Analysis
+    keywords: ['spatial statistic', 'point pattern', 'co-?locali[sz]', 'neighbou?rhood (analysis|enrichment)', 'ripley', 'proximity', 'spatial pattern']
+  - id: svg
+    title: Spatially Variable Genes & Differential Expression
+    keywords: ['spatially variable', 'differential(ly)? express', '\bsvgs?\b', 'spatial gene pattern']
+  - id: ccc
+    title: Cell–Cell Communication
+    keywords: ['cell[- –]cell communication', 'ligand', 'receptor', 'intercellular', 'cell[- –]cell interaction', 'signal(l)?ing']
+  - id: integration
+    title: Registration, Alignment & Histology
+    keywords: ['align', 'registration', 'register', 'h&e', 'histolog', 'serial section', '3d reconstruct', 'multi-sample integration', 'morpholog']
+  - id: foundation
+    title: Foundation Models & AI Agents
+    keywords: ['foundation model', 'transformer', 'pre-?train', '\bllm\b', '\bagent', 'language model']
+  - id: benchmarks
+    title: Benchmarks & Simulators
+    keywords: ['benchmark', 'simulat', 'comparison of', 'evaluat']
+  - id: datasets
+    title: Datasets & Atlases
+    keywords: ['dataset', 'atlas', 'database', 'data resource', 'data portal']
+  - id: guides
+    title: Guides, Tutorials & Reviews
+    keywords: ['tutorial', 'workshop', 'course materials?', 'best practices', 'online book', '\ba review\b', 'review of', 'hands-on']

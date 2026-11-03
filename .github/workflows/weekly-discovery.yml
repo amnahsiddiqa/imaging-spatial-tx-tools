@@ -1,0 +1,86 @@
+name: Weekly discovery
+
+on:
+  schedule:
+    - cron: "17 6 * * 1" # Mondays 06:17 UTC
+  workflow_dispatch:
+    inputs:
+      since:
+        description: "Search window start (YYYY-MM-DD). Blank = last 21 days."
+        required: false
+      min_stars:
+        description: "GitHub star floor. Blank = config/search.yaml value."
+        required: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: weekly-discovery
+  cancel-in-progress: false
+
+env:
+  BRANCH: auto/weekly-candidates
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Continue the open review PR, if there is one
+        id: pr
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          num=$(gh pr list --head "$BRANCH" --state open --json number --jq '.[0].number // empty')
+          echo "number=$num" >> "$GITHUB_OUTPUT"
+          if [ -n "$num" ]; then
+            # Build on the open PR so review edits already made there are kept.
+            git checkout -B "$BRANCH" "origin/$BRANCH"
+            git merge --no-edit origin/main || { git merge --abort; echo "::warning::Could not merge main into $BRANCH; continuing on the branch as is."; }
+          else
+            git checkout -B "$BRANCH"
+          fi
+
+      - name: Search GitHub and Europe PMC
+        id: discover
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          SINCE: ${{ inputs.since }}
+          MIN_STARS: ${{ inputs.min_stars }}
+        run: |
+          python scripts/discover.py ${SINCE:+--since "$SINCE"} ${MIN_STARS:+--min-stars "$MIN_STARS"} --summary "$RUNNER_TEMP/summary.md"
+          python scripts/build_readme.py
+          python scripts/build_readme.py --pr-body "$RUNNER_TEMP/pr_body.md"
+          cat "$RUNNER_TEMP/summary.md" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit and open or update the review PR
+        if: steps.discover.outputs.changes == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR: ${{ steps.pr.outputs.number }}
+        run: |
+          git add data/tools.yaml README.md
+          git commit -m "Add weekly discovery candidates ($(date -u +%F))"
+          if [ -n "$PR" ]; then
+            git push origin "$BRANCH"
+            gh pr edit "$PR" --body-file "$RUNNER_TEMP/pr_body.md"
+            gh pr comment "$PR" --body-file "$RUNNER_TEMP/summary.md"
+          else
+            git push --force origin "$BRANCH"
+            gh pr create --base main --head "$BRANCH" --title "Weekly tool candidates" \
+              --body-file "$RUNNER_TEMP/pr_body.md"
+          fi
