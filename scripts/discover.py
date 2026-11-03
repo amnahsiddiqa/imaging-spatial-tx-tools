@@ -210,7 +210,8 @@ def main() -> None:
                 t = by_id[repo_id(hit["full_name"])]
                 if not t.get("paper") and how != "name-match":
                     t["paper"] = paper
-                    changes.append(f"📄 paper attached to `{t['name']}`: {title[:80]}")
+                    if t["status"] != "rejected":
+                        changes.append(f"📄 paper attached to `{t['name']}`: {title[:80]}")
                 continue
             if hit and (repo_id(hit["full_name"]) in new_ids or hit["full_name"].lower() in excluded):
                 continue
