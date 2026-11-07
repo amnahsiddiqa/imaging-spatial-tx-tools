@@ -9,7 +9,7 @@ Every Monday [`weekly-discovery.yml`](.github/workflows/weekly-discovery.yml) ru
 | Decision | Edit |
 |---|---|
 | Keep it | `status: listed`, and fix `category`, `name`, `description`, `language` or `platforms` if needed |
-| Not a fit | `status: rejected`, optionally with a `note:` saying why. It is stripped to a stub and never proposed again |
+| Not a fit | `status: rejected`, optionally with a `note:` saying why. It is stripped to a stub that keeps its paper's DOI, and neither the repo nor that paper is proposed again |
 | Not sure yet | leave `status: candidate`. It stays under *Awaiting review* in the README |
 
 Then merge. Check paper-only entries (`id: doi:...`) for a code link; if you find one, change `id` to `github:owner/repo` (lower case) and `url` to the repo.

@@ -60,8 +60,12 @@ def save_tools(tools: list[dict], cfg: dict) -> None:
     cleaned = []
     for t in tools:
         if t["status"] == "rejected":
-            # Rejected entries only need enough to stop them being proposed again.
-            t = {k: t[k] for k in ("id", "name", "url", "status", "note") if t.get(k)}
+            # Rejected entries only need enough to stop them being proposed again:
+            # the id for the GitHub search and the paper's DOI for the paper search.
+            stub = {k: t[k] for k in ("id", "name", "url", "status", "note") if t.get(k)}
+            if t.get("paper"):
+                stub["paper"] = {"doi": t["paper"]["doi"]}
+            t = stub
         cleaned.append(_ordered(t))
     cleaned.sort(key=lambda t: (status_rank[t["status"]], order.get(t.get("category"), 99),
                                 t["name"].lower()))
