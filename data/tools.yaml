@@ -3004,6 +3004,8 @@
   name: aestetik
   url: https://github.com/ratschlab/aestetik
   status: rejected
+  paper:
+    doi: 10.1101/2024.06.04.24308256
   note: Visium spot representations; no imaging-based support named
 - id: github:prism-oncology/alhena
   name: ALHENA
@@ -3024,36 +3026,50 @@
   name: BaSISS
   url: https://github.com/gerstung-lab/BaSISS
   status: rejected
+  paper:
+    doi: 10.1038/s41586-022-05425-2
   note: Analysis code for one paper
 - id: github:zjufanlab/bulk2space
   name: bulk2space
   url: https://github.com/ZJUFanLab/bulk2space
   status: rejected
+  paper:
+    doi: 10.1038/s41467-022-34271-z
   note: Bulk RNA-seq deconvolution; image-based data is only an optional spatial reference
 - id: github:lotfollahi-lab/cellbridge
   name: cellbridge
   url: https://github.com/Lotfollahi-lab/cellbridge
   status: rejected
+  paper:
+    doi: 10.64898/2026.10.20.760347
   note: Predicts from H&E; Xenium is only training data, so it does not analyse in situ data
 - id: github:ratschlab/deepspot
   name: DeepSpot
   url: https://github.com/ratschlab/DeepSpot
   status: rejected
+  paper:
+    doi: 10.1101/2025.02.09.25321567
   note: Predicts from H&E; Xenium is only training data, so it does not analyse in situ data
 - id: github:ratschlab/deepspotm
   name: DeepSpotM
   url: https://github.com/ratschlab/DeepSpotM
   status: rejected
+  paper:
+    doi: 10.64898/2026.06.19.26356060
   note: Predicts from H&E; Xenium is only training data, so it does not analyse in situ data
 - id: github:jiangbiolab/deepst
   name: DeepST
   url: https://github.com/JiangBioLab/DeepST
   status: rejected
+  paper:
+    doi: 10.1093/nar/gkac901
   note: Visium and H&E focused; MERFISH appears only in a dataset table
 - id: github:sanofi-public/enact-pipeline
   name: enact-pipeline
   url: https://github.com/Sanofi-Public/enact-pipeline
   status: rejected
+  paper:
+    doi: 10.1093/bioinformatics/btaf094
   note: Visium HD only
 - id: github:ankitbioinfo/nico_tutorial
   name: nico_tutorial
@@ -3064,6 +3080,8 @@
   name: scPRINT-2
   url: https://github.com/cantinilab/scPRINT-2
   status: rejected
+  paper:
+    doi: 10.64898/2025.12.11.693702
   note: scRNA-seq foundation model; Xenium appears only in figure notebooks
 - id: github:nf-core/sopa
   name: sopa
@@ -3074,11 +3092,15 @@
   name: spatialDLPFC
   url: https://github.com/LieberInstitute/spatialDLPFC
   status: rejected
+  paper:
+    doi: 10.1126/science.adh1938
   note: Visium and snRNA-seq study repository, not a tool
 - id: github:sanofi-public/spatialone-pipeline
   name: spatialone-pipeline
   url: https://github.com/Sanofi-Public/spatialone-pipeline
   status: rejected
+  paper:
+    doi: 10.1093/bioinformatics/btae509
   note: Visium; Xenium and CosMx are only future work in its README
 - id: github:luxin-heart/tracer
   name: TRACER
@@ -3094,4 +3116,6 @@
   name: veloviz
   url: https://github.com/JEFworks-Lab/veloviz
   status: rejected
+  paper:
+    doi: 10.1101/2021.01.28.425293
   note: RNA-velocity embedding; MERFISH is one example page
