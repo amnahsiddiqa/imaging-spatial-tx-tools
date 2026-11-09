@@ -3,7 +3,7 @@
 
 A curated, automatically updated list of software for **imaging-based (in situ) spatial transcriptomics**: 10x Genomics Xenium, Bruker/NanoString CosMx, Vizgen MERSCOPE and MERFISH, seqFISH, STARmap, in situ sequencing (ISS), Resolve Molecular Cartography and smFISH-based methods. Tools are grouped by analysis step. Sequencing-based methods (Visium, Stereo-seq, Slide-seq) are out of scope unless a tool also handles imaging-based data.
 
-![tools](https://img.shields.io/badge/tools-164-2b7bb9) ![awaiting review](https://img.shields.io/badge/awaiting%20review-3-e0a100) [![weekly discovery](https://github.com/amnahsiddiqa/imaging-spatial-tx-tools/actions/workflows/weekly-discovery.yml/badge.svg)](https://github.com/amnahsiddiqa/imaging-spatial-tx-tools/actions/workflows/weekly-discovery.yml)
+![tools](https://img.shields.io/badge/tools-164-2b7bb9) ![awaiting review](https://img.shields.io/badge/awaiting%20review-44-e0a100) [![weekly discovery](https://github.com/amnahsiddiqa/imaging-spatial-tx-tools/actions/workflows/weekly-discovery.yml/badge.svg)](https://github.com/amnahsiddiqa/imaging-spatial-tx-tools/actions/workflows/weekly-discovery.yml)
 
 Every Monday a GitHub Action searches GitHub and Europe PMC (PubMed + bioRxiv/medRxiv) for new tools and opens a pull request with the hits for review ([how it works](#how-this-list-is-maintained)).
 
@@ -33,7 +33,7 @@ Every Monday a GitHub Action searches GitHub and Europe PMC (PubMed + bioRxiv/me
 - [Benchmarks & Simulators](#benchmarks--simulators) (4)
 - [Datasets & Atlases](#datasets--atlases) (3)
 - [Guides, Tutorials & Reviews](#guides-tutorials--reviews) (4)
-- [Awaiting review](#awaiting-review) (3)
+- [Awaiting review](#awaiting-review) (44)
 - [How this list is maintained](#how-this-list-is-maintained)
 
 ## General Frameworks & Toolkits
@@ -41,13 +41,13 @@ Every Monday a GitHub Action searches GitHub and Europe PMC (PubMed + bioRxiv/me
 | Tool | Language | Platforms | Description | Paper | ★ |
 |---|---|---|---|---|--:|
 | [CellScopes.jl](https://github.com/HaojiaWu/CellScopes.jl) | Julia | Xenium, MERFISH/MERSCOPE, seqFISH, STARmap, ISS | A Julia package for single cell and spatial data analysis | [Paper 2024](https://doi.org/10.1038/s41467-024-45752-8) | 47 |
-| [Giotto](https://github.com/giotto-suite/Giotto) | R | CosMx, MERFISH/MERSCOPE, seqFISH, STARmap, smFISH | Spatial omics analysis toolbox | [Preprint 2023](https://doi.org/10.1101/2023.11.26.568752) | 395 |
+| [Giotto](https://github.com/giotto-suite/Giotto) | R | CosMx, MERFISH/MERSCOPE, seqFISH, STARmap, smFISH | Spatial omics analysis toolbox | [Preprint 2023](https://doi.org/10.1101/2023.11.26.568752) | 396 |
 | [SCIMAP](https://github.com/labsyspharm/scimap) | Python |  | Spatial Single-Cell Analysis Toolkit | [Paper 2024](https://doi.org/10.21105/joss.06604) | 116 |
-| [scvi-tools (incl. resolVI)](https://github.com/scverse/scvi-tools) | Python |  | Deep probabilistic analysis of single-cell and spatial omics data | [Paper 2022](https://doi.org/10.1038/s41587-021-01206-w) | 1720 |
-| [Seurat](https://github.com/satijalab/seurat) | R |  | R toolkit for single cell genomics | [Paper 2023](https://doi.org/10.1038/s41587-023-01767-y) | 2810 |
+| [scvi-tools (incl. resolVI)](https://github.com/scverse/scvi-tools) | Python |  | Deep probabilistic analysis of single-cell and spatial omics data | [Paper 2022](https://doi.org/10.1038/s41587-021-01206-w) | 1723 |
+| [Seurat](https://github.com/satijalab/seurat) | R |  | R toolkit for single cell genomics | [Paper 2023](https://doi.org/10.1038/s41587-023-01767-y) | 2816 |
 | [SpaLP](https://github.com/dbjzs/SpaLP) | Python | Xenium, CosMx, STARmap | A lightweight, ultrafast and general embedding framework for large-scale spatial omics data | [Preprint 2026](https://doi.org/10.64898/2026.02.04.703814) | 37 |
 | [SpatialExperiment](https://github.com/drighelli/SpatialExperiment) | R |  | Bioconductor S4 class for storing and handling spatially resolved transcriptomics data | [Paper 2022](https://doi.org/10.1093/bioinformatics/btac299) | 74 |
-| [Squidpy](https://github.com/scverse/squidpy) | Python | Xenium | Spatial Single Cell Analysis in Python | [Paper 2022](https://doi.org/10.1038/s41592-021-01358-2) | 613 |
+| [Squidpy](https://github.com/scverse/squidpy) | Python | Xenium | Spatial Single Cell Analysis in Python | [Paper 2022](https://doi.org/10.1038/s41592-021-01358-2) | 612 |
 | [truecell](https://github.com/GenomicAI/truecell) | Python | Xenium, CosMx, MERFISH/MERSCOPE | Pure-Python port of Seurat (v5) — single-cell RNA-seq and spatial transcriptomics analysis (Xenium/Visium/CosMx), built on NumPy/SciPy/AnnData. | [Paper 2023](https://doi.org/10.1038/s41587-023-01767-y) | 15 |
 | [Voyager](https://github.com/pachterlab/voyager) | R | Xenium, CosMx, MERFISH/MERSCOPE | From geospatial to spatial -omics | [Preprint 2023](https://doi.org/10.1101/2023.07.20.549945) | 107 |
 
@@ -55,10 +55,10 @@ Every Monday a GitHub Action searches GitHub and Europe PMC (PubMed + bioRxiv/me
 
 | Tool | Language | Platforms | Description | Paper | ★ |
 |---|---|---|---|---|--:|
-| [Harpy (formerly SPArrOW)](https://github.com/saeyslab/harpy) | Python | Xenium, Molecular Cartography | Scalable whole-slide spatial omics analysis built on SpatialData; successor of the SPArrOW pipeline | [Paper 2022](https://doi.org/10.1093/bioinformatics/btag122) | 82 |
+| [Harpy (formerly SPArrOW)](https://github.com/saeyslab/harpy) | Python | Xenium, Molecular Cartography | Scalable whole-slide spatial omics analysis built on SpatialData; successor of the SPArrOW pipeline | [Paper 2022](https://doi.org/10.1093/bioinformatics/btag122) | 88 |
 | [MOSAIK](https://github.com/anthbapt/MOSAIK) | Jupyter Notebook | Xenium, CosMx, MERFISH/MERSCOPE | Multi-Origin Spatial Transcriptomics Analysis and Integration Kit: stitches CosMx fields of view, resegments CosMx and Xenium samples (Cellpose-SAM + Proseg) and integrates MERSCOPE data | [Paper 2026](https://doi.org/10.21105/joss.08795) | 20 |
 | [nf-core/molkart](https://github.com/nf-core/molkart) | Nextflow | Molecular Cartography | A pipeline for processing Molecular Cartography data from Resolve Bioscience (combinatorial FISH) |  | 14 |
-| [Sopa](https://github.com/prism-oncology/sopa) | Python | Xenium, CosMx, MERFISH/MERSCOPE, Molecular Cartography | Technology-invariant pipeline for spatial omics analysis that scales to millions of cells (Xenium / Visium HD / MERSCOPE / CosMx / etc.). Nextflow version: [nf-core/sopa](https://github.com/nf-core/sopa) | [Paper 2024](https://doi.org/10.1038/s41467-024-48981-z) | 298 |
+| [Sopa](https://github.com/prism-oncology/sopa) | Python | Xenium, CosMx, MERFISH/MERSCOPE, Molecular Cartography | Technology-invariant pipeline for spatial omics analysis that scales to millions of cells (Xenium / Visium HD / MERSCOPE / CosMx / etc.). Nextflow version: [nf-core/sopa](https://github.com/nf-core/sopa) | [Paper 2024](https://doi.org/10.1038/s41467-024-48981-z) | 299 |
 | [SpaceBlocks](https://github.com/cbib/SpaceBlocks) | Python | MERFISH/MERSCOPE, Xenium | Technology-agnostic Snakemake workflow for expert-supervised, cohort-level analysis of single-cell-resolution spatial transcriptomics | [Preprint 2026](https://doi.org/10.64898/2026.10.30.763100) | 5 |
 | [spatialaxe](https://github.com/nf-core/spatialaxe) | Python | Xenium | A bioinformatics best-practice processing and quality control pipeline for Xenium and Artera data |  | 46 |
 | [spatialsnake](https://github.com/l-zh007/spatialsnake) | Python | MERFISH/MERSCOPE, Xenium | A Snakemake workflow for spatial transcriptomics | [Preprint 2026](https://doi.org/10.64898/2026.10.27.762082) | 2 |
@@ -69,7 +69,7 @@ Every Monday a GitHub Action searches GitHub and Europe PMC (PubMed + bioRxiv/me
 
 | Tool | Language | Platforms | Description | Paper | ★ |
 |---|---|---|---|---|--:|
-| [SpatialData](https://github.com/scverse/spatialdata) | Python |  | An open and interoperable data framework for spatial omics data | [Paper 2024](https://doi.org/10.1038/s41592-024-02212-x) | 406 |
+| [SpatialData](https://github.com/scverse/spatialdata) | Python |  | An open and interoperable data framework for spatial omics data | [Paper 2024](https://doi.org/10.1038/s41592-024-02212-x) | 407 |
 | [spatialdata-io](https://github.com/scverse/spatialdata-io) | Python | Xenium, CosMx, MERFISH/MERSCOPE, seqFISH | Readers that load Xenium, CosMx, MERSCOPE, Molecular Cartography and other outputs into SpatialData objects | [Paper 2024](https://doi.org/10.1038/s41592-024-02212-x) | 108 |
 | [SpatialExperimentIO](https://github.com/estellad/SpatialExperimentIO) | R | Xenium, CosMx, MERFISH/MERSCOPE, seqFISH, STARmap | Read in Xenium, CosMx, Vizgen, STARmap PLUS, seqFISH data as Spatial or SingleCell Experiment object. |  | 20 |
 | [SpatialFeatureExperiment](https://github.com/pachterlab/SpatialFeatureExperiment) | R | Xenium, CosMx, MERFISH/MERSCOPE | Extension of SpatialExperiment with sf | [Preprint 2023](https://doi.org/10.1101/2023.07.20.549945) | 59 |
@@ -82,13 +82,13 @@ Every Monday a GitHub Action searches GitHub and Europe PMC (PubMed + bioRxiv/me
 | [cellxgene_VIP](https://github.com/interactivereport/cellxgene_VIP) | Jupyter Notebook | CosMx | Enables cellxgene to generate violin, stacked violin, stacked bar, heatmap, volcano, embedding, dot, track, density, 2D density, sankey and dual-gene plot in high-resolution SVG/PNG format. It also performs differential… | [Preprint 2020](https://doi.org/10.1101/2020.08.28.270652) | 165 |
 | [cirrocumulus](https://github.com/lilab-bcb/cirrocumulus) | JavaScript | Xenium, MERFISH/MERSCOPE | Bring your single-cell data to life |  | 102 |
 | [napari-spatialdata](https://github.com/scverse/napari-spatialdata) | Python |  | Interactive visualization of spatial omics data | [Paper 2024](https://doi.org/10.1038/s41592-024-02212-x) | 91 |
-| [QuPath](https://github.com/qupath/qupath) | Java |  | QuPath - Open-source bioimage analysis for research | [Paper 2017](https://doi.org/10.1038/s41598-017-17204-5) | 1470 |
-| [rakaia](https://github.com/camlab-bioml/rakaia) | Python | Xenium, CosMx | Scalable spatial omics in the browser for hundreds of samples at once \| 10x, IMC, IF, H&E, CosMX, & more \| https://rakaia.io/ |  | 73 |
+| [QuPath](https://github.com/qupath/qupath) | Java |  | QuPath - Open-source bioimage analysis for research | [Paper 2017](https://doi.org/10.1038/s41598-017-17204-5) | 1476 |
+| [rakaia](https://github.com/camlab-bioml/rakaia) | Python | Xenium, CosMx | Scalable spatial omics in the browser for hundreds of samples at once \| 10x, IMC, IF, H&E, CosMX, & more \| https://rakaia.io/ |  | 71 |
 | [samui](https://github.com/chaichontat/samui) | TypeScript | MERFISH/MERSCOPE | A performant scientific image visualization system. | [Preprint 2023](https://doi.org/10.1101/2023.01.28.525943) | 37 |
 | [spatialdata-plot](https://github.com/scverse/spatialdata-plot) | Python |  | Static plotting for spatialdata | [Paper 2024](https://doi.org/10.1038/s41592-024-02212-x) | 89 |
-| [TissUUmaps](https://github.com/TissUUmaps/TissUUmaps) | TypeScript |  | A GPU-accelerated web application for visualization, annotation and sharing of spatial biology data | [Paper 2023](https://doi.org/10.1016/j.heliyon.2023.e15306) | 14 |
+| [TissUUmaps](https://github.com/TissUUmaps/TissUUmaps) | TypeScript |  | A GPU-accelerated web application for visualization, annotation and sharing of spatial biology data | [Paper 2023](https://doi.org/10.1016/j.heliyon.2023.e15306) | 15 |
 | [Vitessce](https://github.com/vitessce/vitessce) | JavaScript |  | Vitessce is a visual integration tool for exploration of spatial single-cell experiments. | [Paper 2024](https://doi.org/10.1038/s41592-024-02436-x) | 273 |
-| [Viv](https://github.com/hms-dbmi/viv) | JavaScript | Xenium | Library for multiscale visualization of high-resolution multiplexed bioimaging data on the web. Directly renders Zarr and OME-TIFF. | [Paper 2022](https://doi.org/10.1038/s41592-022-01482-7) | 372 |
+| [Viv](https://github.com/hms-dbmi/viv) | JavaScript | Xenium | Library for multiscale visualization of high-resolution multiplexed bioimaging data on the web. Directly renders Zarr and OME-TIFF. | [Paper 2022](https://doi.org/10.1038/s41592-022-01482-7) | 373 |
 
 ## Panel & Probe Design
 
@@ -109,7 +109,7 @@ Every Monday a GitHub Action searches GitHub and Europe PMC (PubMed + bioRxiv/me
 | Tool | Language | Platforms | Description | Paper | ★ |
 |---|---|---|---|---|--:|
 | [bardensr](https://github.com/jacksonloper/bardensr) 💤 | Python |  | barcode demixing through nonnegative spatial regression |  | 7 |
-| [Big-FISH](https://github.com/fish-quant/big-fish) 💤 | Python | smFISH | Toolbox for the analysis of smFISH images. | [Preprint 2021](https://doi.org/10.1101/2021.07.20.453024) | 90 |
+| [Big-FISH](https://github.com/fish-quant/big-fish) 💤 | Python | smFISH | Toolbox for the analysis of smFISH images. | [Preprint 2021](https://doi.org/10.1101/2021.07.20.453024) | 91 |
 | [Deconwolf](https://github.com/elgw/deconwolf) | C |  | Deconvolution of widefield microscopy images and generation of point spread functions | [Paper 2024](https://doi.org/10.1038/s41592-024-02294-7) | 68 |
 | [deepBlink](https://github.com/BBQuercus/deepBlink) | Python |  | Threshold independent detection and localization of diffraction-limited spots. | [Paper 2021](https://doi.org/10.1093/nar/gkab546) | 39 |
 | [ISTDECO](https://github.com/axanderssonuu/istdeco) 💤 | Python | MERFISH/MERSCOPE, ISS | Decoding of in situ transcriptomics images by deconvolution with guided sparsity | [Preprint 2021](https://doi.org/10.1101/2021.03.01.433040) | 5 |
@@ -117,7 +117,7 @@ Every Monday a GitHub Action searches GitHub and Europe PMC (PubMed + bioRxiv/me
 | [MERlin](https://github.com/emanuega/MERlin) 💤 | Python | MERFISH/MERSCOPE | MERlin is an extensible analysis pipeline applied to decoding MERFISH data |  | 38 |
 | [PoSTcode](https://github.com/gerstung-lab/postcode) 💤 | Python |  | Decoding of image-based spatial transcriptomics | [Preprint 2021](https://doi.org/10.1101/2021.10.12.464086) | 3 |
 | [RS-FISH](https://github.com/JaneliaSciComp/RS-FISH) | Java | smFISH | Tool for precise, interactive, fast and scalable FISH spot detection | [Paper 2022](https://doi.org/10.1038/s41592-022-01669-y) | 55 |
-| [Spotiflow](https://github.com/weigertlab/spotiflow) | Python | ISS, smFISH | Accurate and efficient spot detection for microscopy data | [Paper 2025](https://doi.org/10.1038/s41592-025-02662-x) | 147 |
+| [Spotiflow](https://github.com/weigertlab/spotiflow) | Python | ISS, smFISH | Accurate and efficient spot detection for microscopy data | [Paper 2025](https://doi.org/10.1038/s41592-025-02662-x) | 148 |
 | [starfish](https://github.com/spacetx/starfish) | Python | smFISH | starfish: unified pipelines for image-based transcriptomics | [Paper 2021](https://doi.org/10.21105/joss.02440) | 252 |
 
 ## Cell Segmentation
@@ -127,21 +127,21 @@ Every Monday a GitHub Action searches GitHub and Europe PMC (PubMed + bioRxiv/me
 | [Baysor](https://github.com/kharchenkolab/Baysor) | Julia | Xenium | Bayesian Segmentation of Spatial Transcriptomics Data | [Paper 2021](https://doi.org/10.1038/s41587-021-01044-w) | 219 |
 | [Bering](https://github.com/KANG-BIOINFO/Bering) 💤 | Python |  | GCN-based Segmentation Method for single-cell spatial transcriptomics data |  | 0 |
 | [BIDCell](https://github.com/SydneyBioX/BIDCell) 💤 | Python | Xenium, CosMx, MERFISH/MERSCOPE | Biologically-informed deep learning for cell segmentation of subcelluar spatial transcriptomics data | [Paper 2024](https://doi.org/10.1038/s41467-023-44560-w) | 51 |
-| [Cellpose](https://github.com/MouseLand/cellpose) | Python |  | a generalist algorithm for cellular segmentation with human-in-the-loop capabilities | [Preprint 2025](https://doi.org/10.1101/2025.04.28.651001) | 2425 |
+| [Cellpose](https://github.com/MouseLand/cellpose) | Python |  | a generalist algorithm for cellular segmentation with human-in-the-loop capabilities | [Preprint 2025](https://doi.org/10.1101/2025.04.28.651001) | 2432 |
 | [CellSAM](https://github.com/vanvalenlab/cellSAM) | Python |  | Codebase for "A Foundation Model for Cell Segmentation" | [Preprint 2023](https://doi.org/10.1101/2023.11.17.567630) | 220 |
 | [ClusterMap](https://github.com/LiuLab-Bioelectronics-Harvard/ClusterMap) 💤 | Python | STARmap | ClusterMap for multi-scale clustering analysis of spatial gene expression | [Paper 2021](https://doi.org/10.1038/s41467-021-26044-x) | 6 |
 | [ComSeg](https://github.com/fish-quant/ComSeg) | Python |  | Point-cloud, graph-based cell segmentation of transcripts in imaging-based spatial transcriptomics | [Paper 2024](https://doi.org/10.1038/s42003-024-06480-3) | 25 |
 | [DeepCell (Mesmer)](https://github.com/vanvalenlab/deepcell-tf) | Python |  | Deep Learning Library for Single Cell Analysis | [Paper 2016](https://doi.org/10.1371/journal.pcbi.1005177) | 481 |
 | [FastReseg](https://github.com/Nanostring-Biostats/FastReseg) | R |  | FastReseg for detection and correction of cell segmentation error based on spatial profile of transcripts. | [Paper 2025](https://doi.org/10.1038/s41598-025-08733-5) | 17 |
 | [GeneSegNet](https://github.com/BoomStarcuc/GeneSegNet) 💤 | Python |  | Deep-learning cell segmentation that combines transcript locations with imaging | [Paper 2023](https://doi.org/10.1186/s13059-023-03054-0) | 18 |
-| [InstanSeg](https://github.com/instanseg/instanseg) | Python |  | InstanSeg is a pytorch-based cell and nucleus segmentation pipeline for fluorescence and brightfield microscopy images. | [Preprint 2024](https://doi.org/10.48550/arxiv.2408.15954) | 251 |
+| [InstanSeg](https://github.com/instanseg/instanseg) | Python |  | InstanSeg is a pytorch-based cell and nucleus segmentation pipeline for fluorescence and brightfield microscopy images. | [Preprint 2024](https://doi.org/10.48550/arxiv.2408.15954) | 253 |
 | [JSTA](https://github.com/wollmanlab/JSTA) 💤 | Python |  | Joint cell segmentation and cell type annotation for spatial transcriptomics | [Paper 2021](https://doi.org/10.15252/msb.202010108) | 15 |
 | [pciSeq](https://github.com/acycliq/pciSeq) | Python | ISS | A probabilistic cell typing algorithm for spatial transcriptomics. | [Paper 2019](https://doi.org/10.1038/s41592-019-0631-4) | 26 |
 | [Proseg](https://github.com/dcjones/proseg) | Rust | Xenium, CosMx, MERFISH/MERSCOPE | Probabilistic cell segmentation for in situ spatial transcriptomics | [Paper 2025](https://doi.org/10.1038/s41592-025-02697-0) | 198 |
 | [rna2seg](https://github.com/fish-quant/rna2seg) | Python | CosMx, MERFISH/MERSCOPE | Deep-learning model for cell segmentation in imaging-based spatial transcriptomics | [Preprint 2025](https://doi.org/10.1101/2025.03.03.641259) | 25 |
 | [segger](https://github.com/EliHei2/segger_dev) | Python | Xenium | a cutting-edge cell segmentation model specifically designed for single-molecule resolved spatial omics datasets. It addresses the challenge of accurately segmenting individual cells in complex imaging datasets, leverag… | [Preprint 2025](https://doi.org/10.1101/2025.03.14.643160) | 91 |
-| [SpaCut](https://github.com/wenwenmin/SpaCut) | Jupyter Notebook | CosMx, MERFISH/MERSCOPE, Xenium | SpaCut: Transcript-aware Morphology Fusion for Robust Cell Segmentation in Subcellular Spatial Transcriptomics | [Paper 2026](https://doi.org/10.1002/advs.78423) | 3 |
-| [StarDist](https://github.com/stardist/stardist) | Python |  | StarDist - Object Detection with Star-convex Shapes | [Paper 2018](https://doi.org/10.1007/978-3-030-00934-2_30) | 1289 |
+| [SpaCut](https://github.com/wenwenmin/SpaCut) | Jupyter Notebook | CosMx, MERFISH/MERSCOPE, Xenium | SpaCut: Transcript-aware Morphology Fusion for Robust Cell Segmentation in Subcellular Spatial Transcriptomics | [Paper 2026](https://doi.org/10.1002/advs.78423) | 5 |
+| [StarDist](https://github.com/stardist/stardist) | Python |  | StarDist - Object Detection with Star-convex Shapes | [Paper 2018](https://doi.org/10.1007/978-3-030-00934-2_30) | 1292 |
 
 ## Segmentation-free & Subcellular Analysis
 
@@ -173,7 +173,7 @@ Every Monday a GitHub Action searches GitHub and Europe PMC (PubMed + bioRxiv/me
 | [MapMyCells (cell_type_mapper)](https://github.com/AllenInstitute/cell_type_mapper) | Python |  | Implementation of hierarchical and correlation mapping algorithms for MapMyCells (https://brain-map.org/bkp/analyze/mapmycells) | [Preprint 2026](https://doi.org/10.64898/2026.03.06.710160) | 57 |
 | [NiCo](https://github.com/gruenlab/nico-wrapper) | Jupyter Notebook | Xenium, MERFISH/MERSCOPE, seqFISH | NiCo workflow: cell type annotation of single-cell-resolution spatial data, niche interactions and gene-program covariation. Wraps [nico-sc-sp](https://github.com/ankitbioinfo/nico_tutorial) | [Paper 2024](https://doi.org/10.1038/s41467-024-54973-w) | 1 |
 | [rctd-py](https://github.com/p-gueguen/rctd-py) | Python | Xenium, CosMx, MERFISH/MERSCOPE | GPU-accelerated RCTD for spatial transcriptomics | [Paper 2021](https://doi.org/10.1038/s41587-021-00830-w) | 66 |
-| [spacexr (RCTD, C-SIDE)](https://github.com/dmcable/spacexr) | R | MERFISH/MERSCOPE | Spatial-eXpression-R: Cell type identification (including cell type mixtures) and cell type-specific differential expression for spatial transcriptomics | [Paper 2021](https://doi.org/10.1038/s41587-021-00830-w) | 492 |
+| [spacexr (RCTD, C-SIDE)](https://github.com/dmcable/spacexr) | R | MERFISH/MERSCOPE | Spatial-eXpression-R: Cell type identification (including cell type mixtures) and cell type-specific differential expression for spatial transcriptomics | [Paper 2021](https://doi.org/10.1038/s41587-021-00830-w) | 493 |
 | [STELLAR](https://github.com/snap-stanford/stellar) 💤 | Python |  | Geometric deep learning that transfers cell type labels to spatially resolved single-cell data | [Paper 2022](https://doi.org/10.1038/s41592-022-01651-8) | 73 |
 | [TACCO](https://github.com/simonwm/tacco) | Python |  | TACCO: Transfer of Annotations to Cells and their COmbinations | [Paper 2023](https://doi.org/10.1038/s41587-023-01657-3) | 70 |
 
@@ -184,23 +184,23 @@ Every Monday a GitHub Action searches GitHub and Europe PMC (PubMed + bioRxiv/me
 | [CONCERT](https://github.com/mims-harvard/CONCERT) | Jupyter Notebook | MERFISH/MERSCOPE | Generative modeling of spatially resolved perturbation responses with CONCERT | [Preprint 2025](https://doi.org/10.1101/2025.11.08.686890) | 29 |
 | [cytospace](https://github.com/digitalcytometry/cytospace) | Python | MERFISH/MERSCOPE | CytoSPACE: Optimal mapping of scRNA-seq data to spatial transcriptomics data | [Paper 2023](https://doi.org/10.1038/s41587-023-01697-9) | 153 |
 | [ENVI](https://github.com/dpeerlab/ENVI) | Python |  | Joint embedding of spatial and scRNA-seq data to impute genes and model cellular environments (scENVI) | [Paper 2024](https://doi.org/10.1038/s41587-024-02193-4) | 57 |
-| [moscot](https://github.com/theislab/moscot) | Python |  | Multi-omic single-cell optimal transport tools | [Paper 2025](https://doi.org/10.1038/s41586-024-08453-2) | 220 |
+| [moscot](https://github.com/theislab/moscot) | Python |  | Multi-omic single-cell optimal transport tools | [Paper 2025](https://doi.org/10.1038/s41586-024-08453-2) | 219 |
 | [SpaGE](https://github.com/tabdelaal/SpaGE) 💤 | Python |  | Enhancing spatial transcriptomics data by predicting the expression of unmeasured genes from a dissociated scRNA-seq data | [Paper 2020](https://doi.org/10.1093/nar/gkaa740) | 44 |
 | [SpaOTsc](https://github.com/zcang/SpaOTsc) | Python |  | Optimal-transport mapping of scRNA-seq cells to space and inference of spatial signalling relationships | [Paper 2020](https://doi.org/10.1038/s41467-020-15968-5) | 48 |
 | [stPlus](https://github.com/xy-chen16/stPlus) 💤 | Python | smFISH | stPlus: reference-based enhancement of spatial transcriptomics | [Paper 2021](https://doi.org/10.1093/bioinformatics/btab298) | 21 |
-| [Tangram](https://github.com/broadinstitute/Tangram) | Python |  | Spatial alignment of single cell transcriptomic data. | [Paper 2021](https://doi.org/10.1038/s41592-021-01264-7) | 375 |
+| [Tangram](https://github.com/broadinstitute/Tangram) | Python |  | Spatial alignment of single cell transcriptomic data. | [Paper 2021](https://doi.org/10.1038/s41592-021-01264-7) | 376 |
 | [uniPort](https://github.com/caokai1073/uniPort) | Python |  | a unified single-cell data integration framework by optimal transport | [Paper 2022](https://doi.org/10.1038/s41467-022-35094-8) | 41 |
 
 ## Spatial Domains & Niches
 
 | Tool | Language | Platforms | Description | Paper | ★ |
 |---|---|---|---|---|--:|
-| [BANKSY](https://github.com/prabhakarlab/Banksy) | R | Xenium, CosMx, MERFISH/MERSCOPE, seqFISH, STARmap | BANKSY: spatial clustering. Python version: [Banksy_py](https://github.com/prabhakarlab/Banksy_py) | [Paper 2024](https://doi.org/10.1038/s41588-024-01664-3) | 171 |
-| [CellCharter](https://github.com/CSOgroup/cellcharter) | Python | Xenium, CosMx, MERFISH/MERSCOPE, seqFISH | A Python package for the identification, characterization and comparison of spatial clusters from spatial -omics data. | [Paper 2023](https://doi.org/10.1038/s41588-023-01588-4) | 203 |
+| [BANKSY](https://github.com/prabhakarlab/Banksy) | R | Xenium, CosMx, MERFISH/MERSCOPE, seqFISH, STARmap | BANKSY: spatial clustering. Python version: [Banksy_py](https://github.com/prabhakarlab/Banksy_py) | [Paper 2024](https://doi.org/10.1038/s41588-024-01664-3) | 172 |
+| [CellCharter](https://github.com/CSOgroup/cellcharter) | Python | Xenium, CosMx, MERFISH/MERSCOPE, seqFISH | A Python package for the identification, characterization and comparison of spatial clusters from spatial -omics data. | [Paper 2023](https://doi.org/10.1038/s41588-023-01588-4) | 204 |
 | [celltransformer](https://github.com/abbasilab/celltransformer) | Jupyter Notebook | MERFISH/MERSCOPE | Transformer based region discovery in spatial transcriptomics (but mostly MERFISH) datasets | [Paper 2025](https://doi.org/10.1038/s41467-025-64259-4) | 20 |
 | [cosmim](https://github.com/barondu/cosmim) | Jupyter Notebook | MERFISH/MERSCOPE, STARmap, Xenium, smFISH | CoSMIM: redefining the niche as multi-scale neighbourhood gene covariance for training-free spatial-domain identification | [Preprint 2026](https://doi.org/10.64898/2026.10.20.760373) | 0 |
 | [CytoCommunity](https://github.com/huBioinfo/CytoCommunity) | Python | MERFISH/MERSCOPE | A spatial omics data analysis tool that enables both unsupervised and supervised discovery of complex tissue cellular neighborhoods from cell phenotypes. | [Paper 2024](https://doi.org/10.1038/s41592-023-02124-2) | 27 |
-| [GASTON](https://github.com/raphael-group/GASTON) | Python | Xenium, MERFISH/MERSCOPE | GASTON: deep learning algorithm learns "topography" of a tissue slice from spatial transcriptomics data | [Paper 2025](https://doi.org/10.1038/s41592-024-02503-3) | 76 |
+| [GASTON](https://github.com/raphael-group/GASTON) | Python | Xenium, MERFISH/MERSCOPE | GASTON: deep learning algorithm learns "topography" of a tissue slice from spatial transcriptomics data | [Paper 2025](https://doi.org/10.1038/s41592-024-02503-3) | 77 |
 | [GraphST](https://github.com/JinmiaoChenLab/GraphST) 💤 | Python |  | Graph self-supervised contrastive learning for spatial clustering, integration and deconvolution | [Paper 2023](https://doi.org/10.1038/s41467-023-36796-3) | 165 |
 | [Kontext](https://github.com/cantinilab/Kontext) | Python | Xenium | Kontext: Kernel-based method bridging spatial domain identification and cell-cell communication | [Preprint 2026](https://doi.org/10.64898/2026.10.26.761813) | 1 |
 | [NicheCompass](https://github.com/Lotfollahi-lab/nichecompass) | Python |  | End-to-end analysis of spatial multi-omics data | [Paper 2025](https://doi.org/10.1038/s41588-025-02120-6) | 135 |
@@ -227,7 +227,7 @@ Every Monday a GitHub Action searches GitHub and Europe PMC (PubMed + bioRxiv/me
 
 | Tool | Language | Platforms | Description | Paper | ★ |
 |---|---|---|---|---|--:|
-| [Hotspot](https://github.com/YosefLab/Hotspot) | Python |  | Finds informative genes and gene modules on a cell-similarity graph, including spatial neighbourhoods | [Paper 2021](https://doi.org/10.1016/j.cels.2021.04.005) | 168 |
+| [Hotspot](https://github.com/YosefLab/Hotspot) | Python |  | Finds informative genes and gene modules on a cell-similarity graph, including spatial neighbourhoods | [Paper 2021](https://doi.org/10.1016/j.cels.2021.04.005) | 170 |
 | [NicheDE](https://github.com/kaishumason/NicheDE) | R |  | NicheDE is a method that detects context dependent changes in gene expression in spatial transcriptomic data. | [Preprint 2023](https://doi.org/10.1101/2023.01.03.522646) | 23 |
 | [nnSVG](https://github.com/lmweber/nnSVG) | R |  | nnSVG: scalable method to identify spatially variable genes (SVGs) in spatially-resolved transcriptomics data | [Paper 2023](https://doi.org/10.1038/s41467-023-39748-z) | 25 |
 | [SPARK / SPARK-X](https://github.com/xzhoulab/SPARK) 💤 | R | MERFISH/MERSCOPE, seqFISH | Spatially resolved transcriptomic analysis | [Paper 2021](https://doi.org/10.1186/s13059-021-02404-0) | 68 |
@@ -240,8 +240,8 @@ Every Monday a GitHub Action searches GitHub and Europe PMC (PubMed + bioRxiv/me
 |---|---|---|---|---|--:|
 | [CellNeighborEX](https://github.com/hkim240/CellNeighborEX) | Python |  | CellNeighborEX: Deciphering Neighbor-Dependent Gene Expression from Spatial Transcriptomics Data | [Paper 2023](https://doi.org/10.15252/msb.202311670) | 15 |
 | [COMMOT](https://github.com/zcang/COMMOT) | Python |  | Collective optimal transport inference of cell–cell communication in spatial transcriptomics | [Paper 2023](https://doi.org/10.1038/s41592-022-01728-4) | 152 |
-| [LIANA+](https://github.com/scverse/liana) | Python | Xenium | LIANA+: an all-in-one framework for cell-cell communication | [Paper 2024](https://doi.org/10.1038/s41556-024-01469-w) | 326 |
-| [mistyR](https://github.com/saezlab/mistyR) | R |  | Multiview Intercellular SpaTial modeling framework | [Paper 2022](https://doi.org/10.1186/s13059-022-02663-5) | 74 |
+| [LIANA+](https://github.com/scverse/liana) | Python | Xenium | LIANA+: an all-in-one framework for cell-cell communication | [Paper 2024](https://doi.org/10.1038/s41556-024-01469-w) | 325 |
+| [mistyR](https://github.com/saezlab/mistyR) | R |  | Multiview Intercellular SpaTial modeling framework | [Paper 2022](https://doi.org/10.1186/s13059-022-02663-5) | 76 |
 | [NCEM](https://github.com/theislab/ncem) 💤 | Python |  | Learning cell communication from spatial graphs of cells | [Paper 2022](https://doi.org/10.1038/s41587-022-01467-z) | 121 |
 | [NICHES](https://github.com/msraredon/NICHES) | R |  | Niche Interactions and Cellular Heterogeneity in Extracellular Signaling | [Paper 2022](https://doi.org/10.1093/bioinformatics/btac775) | 61 |
 | [SpaTalk](https://github.com/ZJUFanLab/SpaTalk) | R |  | Knowledge-graph-based cell-cell communication inference for spatially resolved transcriptomic data | [Paper 2022](https://doi.org/10.1038/s41467-022-32111-8) | 80 |
@@ -253,13 +253,13 @@ Every Monday a GitHub Action searches GitHub and Europe PMC (PubMed + bioRxiv/me
 | [bcpd](https://github.com/ohirose/bcpd) | C | MERFISH/MERSCOPE | Domain Elastic Transform / Bayesian Coherent Point Drift | [Paper 2026](https://doi.org/10.1109/tpami.2026.3733393) | 376 |
 | [CAST](https://github.com/wanglab-broad/CAST) 💤 | Python |  | Search-and-match alignment of spatial omics samples at single-cell resolution | [Paper 2024](https://doi.org/10.1038/s41592-024-02410-7) | 44 |
 | [GPSA](https://github.com/andrewcharlesjones/spatial-alignment) 💤 | Python |  | Alignment of spatial genomics data using deep Gaussian processes | [Preprint 2022](https://doi.org/10.1101/2022.01.10.475692) | 32 |
-| [Palom](https://github.com/labsyspharm/palom) | Python |  | Piecewise alignment for layers of mosaics |  | 67 |
-| [PASTE](https://github.com/raphael-group/paste) | Python |  | Probabilistic Alignment of Spatial Transcriptomics Experiments | [Paper 2022](https://doi.org/10.1038/s41592-022-01459-6) | 105 |
-| [SLAT](https://github.com/gao-lab/SLAT) | Python |  | Spatial-Linked Alignment Tool | [Paper 2023](https://doi.org/10.1038/s41467-023-43105-5) | 96 |
+| [Palom](https://github.com/labsyspharm/palom) | Python |  | Piecewise alignment for layers of mosaics |  | 68 |
+| [PASTE](https://github.com/raphael-group/paste) | Python |  | Probabilistic Alignment of Spatial Transcriptomics Experiments | [Paper 2022](https://doi.org/10.1038/s41592-022-01459-6) | 106 |
+| [SLAT](https://github.com/gao-lab/SLAT) | Python |  | Spatial-Linked Alignment Tool | [Paper 2023](https://doi.org/10.1038/s41467-023-43105-5) | 95 |
 | [SpatialEx](https://github.com/KEAML-JLU/SpatialEx) | Jupyter Notebook | Xenium | The source code for "High-Parameter Spatial Multi-Omics through Histology-Anchored Integration" | [Paper 2025](https://doi.org/10.1038/s41592-025-02926-6) | 39 |
 | [STalign](https://github.com/JEFworks-Lab/STalign) | Python | Xenium, MERFISH/MERSCOPE, STARmap | Python tool for alignment of spatial transcriptomics (ST) data using diffeomorphic metric mapping | [Paper 2023](https://doi.org/10.1038/s41467-023-43915-7) | 116 |
 | [VALIS](https://github.com/MathOnco/valis) | Python |  | Virtual Alignment of pathoLogy Image Series | [Paper 2023](https://doi.org/10.1038/s41467-023-40218-9) | 248 |
-| [wsireg](https://github.com/NHPatterson/wsireg) 💤 | Python |  | multimodal whole slide image registration in a graph structure |  | 105 |
+| [wsireg](https://github.com/NHPatterson/wsireg) 💤 | Python |  | multimodal whole slide image registration in a graph structure |  | 106 |
 
 ## Foundation Models & AI Agents
 
@@ -267,7 +267,7 @@ Every Monday a GitHub Action searches GitHub and Europe PMC (PubMed + bioRxiv/me
 |---|---|---|---|---|--:|
 | [CELLama](https://github.com/portrai-io/CELLama) | Python |  | Foundation model that embeds cells and their spatial neighbours via language-model sentence embeddings | [Preprint 2024](https://doi.org/10.1101/2024.05.08.593094) | 23 |
 | [ChatSpatial](https://github.com/cafferychen777/ChatSpatial) | Python | Xenium, MERFISH/MERSCOPE, seqFISH | MCP server for spatial transcriptomics analysis through natural language interfaces. | [Preprint 2026](https://doi.org/10.64898/2026.02.26.708361) | 45 |
-| [Loki](https://github.com/GuangyuWangLab2021/Loki) | Python |  | A visual–omics foundation model to bridge histopathology with spatial transcriptomics | [Paper 2025](https://doi.org/10.1038/s41592-025-02707-1) | 154 |
+| [Loki](https://github.com/GuangyuWangLab2021/Loki) | Python |  | A visual–omics foundation model to bridge histopathology with spatial transcriptomics | [Paper 2025](https://doi.org/10.1038/s41592-025-02707-1) | 155 |
 | [Nicheformer](https://github.com/theislab/nicheformer) | Python |  | Repository for Nicheformer: a foundation model for single-cell and spatial omics | [Preprint 2024](https://doi.org/10.1101/2024.04.15.589472) | 179 |
 | [Novae](https://github.com/prism-oncology/novae) | Python |  | Graph-based foundation model for spatial transcriptomics data. Zero-shot spatial domain inference, batch-effect correction, and many other features. | [Paper 2025](https://doi.org/10.1038/s41592-025-02899-6) | 164 |
 | [scGPT-spatial](https://github.com/bowang-lab/scGPT-spatial) | Python | Xenium, MERFISH/MERSCOPE | scGPT continually pretrained on spatial transcriptomics, including imaging-based data | [Preprint 2025](https://doi.org/10.1101/2025.02.05.636714) | 144 |
@@ -288,7 +288,7 @@ Every Monday a GitHub Action searches GitHub and Europe PMC (PubMed + bioRxiv/me
 | Tool | Language | Platforms | Description | Paper | ★ |
 |---|---|---|---|---|--:|
 | [Allen Brain Cell Atlas (abc_atlas_access)](https://github.com/AllenInstitute/abc_atlas_access) | Python |  | Documentation and examples demonstrating how to access data from the Allen Brain Cell Atlas | [Paper 2023](https://doi.org/10.1038/s41586-023-06812-z) | 128 |
-| [HEST](https://github.com/mahmoodlab/HEST) | Python | Xenium | Integrating histology and spatial transcriptomics - NeurIPS 2024 | [Preprint 2024](https://doi.org/10.48550/arxiv.2406.16192) | 447 |
+| [HEST](https://github.com/mahmoodlab/HEST) | Python | Xenium | Integrating histology and spatial transcriptomics - NeurIPS 2024 | [Preprint 2024](https://doi.org/10.48550/arxiv.2406.16192) | 449 |
 | [SODB (pysodb)](https://github.com/TencentAILabHealthcare/pysodb) 💤 | Python |  | Python access to SODB, a database of public spatial omics datasets | [Paper 2023](https://doi.org/10.1038/s41592-023-01773-7) | 30 |
 
 ## Guides, Tutorials & Reviews
@@ -306,6 +306,47 @@ Found by the weekly search and not yet checked. Treat these as leads, not recomm
 
 | Tool | Suggested category | Platforms | Description | Paper | Found |
 |---|---|---|---|---|---|
+| [XeniumClean](https://github.com/rachael-z/XeniumClean) | Cell Type Annotation & Label Transfer | Xenium, CosMx, MERFISH/MERSCOPE | Spatial neighbour-aware transcript cleanup for imaging-based spatial transcriptomics data (Xenium, MERSCOPE, CosMx). XeniumClean removes biologically implausible transcripts by combining a single-cell RNA-seq reference… |  | 2026-11-09 |
+| [TRACER](https://github.com/imlong4real/TRACER) | Pipelines & Workflows | Xenium, CosMx, MERFISH/MERSCOPE | Tissue Reconstruction via Associative Clique Extraction and Relation-mapping (TRACER) | [Preprint 2026](https://doi.org/10.64898/2026.03.08.710395) | 2026-11-09 |
+| [STopover](https://github.com/bsungwoo/STopover) | Spatial Statistics & Neighbourhood Analysis | Xenium, CosMx | capturing spatial colocalization and interaction in the TME using topological analysis in spatial transcriptomics data | [Paper 2025](https://doi.org/10.1186/s13073-025-01457-1) | 2026-11-09 |
+| [STAIG](https://github.com/y-itao/STAIG) | Registration, Alignment & Histology | Xenium, CosMx, MERFISH/MERSCOPE, seqFISH, STARmap | STAIG: Spatial Transcriptomics Analysis via Image-Aided Graph Contrastive Learning for Deciphering and Alignment-Free Integration | [Paper 2025](https://doi.org/10.1038/s41467-025-56276-0) | 2026-11-09 |
+| [SpottedPy](https://github.com/secrierlab/SpottedPy) | Cell Type Annotation & Label Transfer | Xenium | Hotspot cluster distance analysis in spatial transcriptomic data | [Paper 2024](https://doi.org/10.1186/s13059-024-03428-y) | 2026-11-09 |
+| [spotless-benchmark](https://github.com/saeyslab/spotless-benchmark) | Benchmarks & Simulators | seqFISH | A repository for benchmarking spatial deconvolution and mapping tools | [Paper 2024](https://doi.org/10.7554/elife.88431.3) | 2026-11-09 |
+| [spoQC](https://github.com/heylf/spoQC) | Quality Control | Xenium | A modular framework for multimodal quality control (QC) of imaging-based spatially resolved transcriptomics (SRT). |  | 2026-11-09 |
+| [SPLIT](https://github.com/bdsc-tds/SPLIT) | Normalization, Denoising & Correction | Xenium | Profile purification of single-cell spatial transcriptomics data | [Paper 2026](https://doi.org/10.1038/s41592-026-03089-8) | 2026-11-09 |
+| [SPLISOSM](https://github.com/JiayuSuPKU/SPLISOSM) | Spatial Statistics & Neighbourhood Analysis | Xenium | Isoform-level spatial transcriptomics analysis | [Preprint 2026](https://doi.org/10.48550/arxiv.2602.02825) | 2026-11-09 |
+| [SpaTopic](https://github.com/xiyupeng/SpaTopic) | Image Processing, Spot Detection & Decoding | CosMx | An R package for fast topic inference to identify tissue architecture in multiplexed images | [Paper 2025](https://doi.org/10.1038/s41467-025-61821-y) | 2026-11-09 |
+| [SpatialScope](https://github.com/YangLabHKUST/SpatialScope) 💤 | General Frameworks & Toolkits | MERFISH/MERSCOPE | A unified approach for integrating spatial and single-cell transcriptomics data by leveraging deep generative models |  | 2026-11-09 |
+| [spatial-datasets](https://github.com/drieslab/spatial-datasets) | Datasets & Atlases | Xenium, CosMx, MERFISH/MERSCOPE, seqFISH, STARmap, Molecular Cartography, smFISH | overview of spatial datasets | [Paper 2018](https://doi.org/10.7554/elife.31657) | 2026-11-09 |
+| [SpaGCN](https://github.com/jianhuupenn/SpaGCN) | Spatial Domains & Niches | MERFISH/MERSCOPE, seqFISH, STARmap, ExSeq/FISSEQ | SpaGCN: Integrating gene expression, spatial location and histology to identify spatial domains and spatially variable genes by graph convolutional network | [Preprint 2020](https://doi.org/10.1101/2020.11.30.405118) | 2026-11-09 |
+| [Spaco](https://github.com/BrainStOrmics/Spaco) 💤 | Viewers & Visualization | seqFISH | Spatially constrained color profiling for visualizing single-cell resolution spatial data | [Paper 2024](https://doi.org/10.1016/j.patter.2023.100915) | 2026-11-09 |
+| [scstGCN](https://github.com/wenwenmin/scstGCN) | Registration, Alignment & Histology | Xenium | [Briefings in Bioinformatics 2025] A GCN and pathology image large model-based method to predict single-cell resolution spatial gene expression by integrating multimodal information. | [Paper 2024](https://doi.org/10.1093/bib/bbae630) | 2026-11-09 |
+| [Renoir](https://github.com/Zafar-Lab/Renoir) | Cell–Cell Communication | Xenium, CosMx | Charting spatial ligand-target activity using Renoir (ligand-taRgEt iNteractions acrOss spatIal topogRaphy) | [Paper 2026](https://doi.org/10.1038/s41467-026-72388-7) | 2026-11-09 |
+| [phoenix](https://github.com/peng-lab/phoenix) | Registration, Alignment & Histology | Xenium | Highly accurate prediction of single-cell spatial transcriptomics from histology images | [Preprint 2026](https://doi.org/10.64898/2026.04.25.720812) | 2026-11-09 |
+| [PantheonOS](https://github.com/aristoteleo/PantheonOS) | Foundation Models & AI Agents | MERFISH/MERSCOPE | A general, evolvable, and distributed agent framework & harness for data science. |  | 2026-11-09 |
+| [OpenBioMed](https://github.com/PharMolix/OpenBioMed) | Foundation Models & AI Agents | Xenium, MERFISH/MERSCOPE |  | [Paper 2023](https://doi.org/10.1126/science.ade2574) | 2026-11-09 |
+| [odon](https://github.com/alexcoulton/odon) | Viewers & Visualization | Xenium | Ultra-fast spatial proteomics OME-Zarr viewer built in Rust. | [Paper 2026](https://doi.org/10.1093/bioinformatics/btag514) | 2026-11-09 |
+| [NicheScope](https://github.com/xinyiyu/NicheScope) | Spatial Domains & Niches | Xenium, CosMx | A unified framework for identifying multicellular niches and niche-regulated cell states from spatial transcriptomics data. | [Preprint 2025](https://doi.org/10.1101/2025.08.21.671426) | 2026-11-09 |
+| [MNMST](https://github.com/xkmaxidian/MNMST) 💤 | Spatial Domains & Niches | STARmap, smFISH | Multi-Layer Network Model leverages identification of spatial domains from spatial transcriptomics data | [Paper 2024](https://doi.org/10.1186/s13059-024-03272-0) | 2026-11-09 |
+| [loupeR](https://github.com/10XGenomics/loupeR) | Data Formats, Readers & Conversion | Xenium | Convert Seurat objects to 10x Genomics Loupe files. |  | 2026-11-09 |
+| [janesick_nature_comms_2023_companion](https://github.com/10XGenomics/janesick_nature_comms_2023_companion) 💤 | Spatial Domains & Niches | Xenium | Code companion to the publication "High resolution mapping of the breast cancer tumor microenvironment using integrated single cell, spatial and in situ analysis of FFPE tissue" | [Preprint 2022](https://doi.org/10.1101/2022.10.06.510405) | 2026-11-09 |
+| [iSCALE](https://github.com/amesch441/iSCALE) | Registration, Alignment & Histology | Xenium, CosMx | Scaling up spatial transcriptomics for large-sized tissues: uncovering cellular-level tissue architecture beyond conventional platforms |  | 2026-11-09 |
+| [GARDEN](https://github.com/Briskzxm/GARDEN) | General Frameworks & Toolkits | Xenium, STARmap, ISS | Robust characterization and interpretation of rare pathogenic cell populations from spatial omics using GARDEN | [Paper 2026](https://doi.org/10.1038/s41467-026-68500-6) | 2026-11-09 |
+| [flashdeconv](https://github.com/cafferychen777/flashdeconv) | Cell Type Annotation & Label Transfer | Xenium | Fast, deterministic cell-type deconvolution for million-bin spatial transcriptomics | [Preprint 2025](https://doi.org/10.64898/2025.12.22.696108) | 2026-11-09 |
+| [escape](https://github.com/BorchLab/escape) | Pipelines & Workflows | Xenium | Easy single cell analysis platform for enrichment |  | 2026-11-09 |
+| [eFISHent](https://github.com/BBQuercus/eFISHent) | Pipelines & Workflows | MERFISH/MERSCOPE, smFISH | RNA smFISH oligos/probes design tool |  | 2026-11-09 |
+| [ecotyper](https://github.com/digitalcytometry/ecotyper) | General Frameworks & Toolkits | Xenium, MERFISH/MERSCOPE | EcoTyper is a machine learning framework for large-scale identification of cell states and cellular ecosystems from gene expression data. | [Paper 2021](https://doi.org/10.1016/j.cell.2021.09.014) | 2026-11-09 |
+| [Discovery-locked cross-platform evaluation of a cervical ep…](https://doi.org/10.1007/s10142-026-02088-4) | Benchmarks & Simulators | Xenium | Discovery-locked cross-platform evaluation of a cervical epithelial transcriptional state *(no code repository found yet)* | [Paper 2026](https://doi.org/10.1007/s10142-026-02088-4) | 2026-11-09 |
+| [DenoIST](https://github.com/aaronkwc/DenoIST) | Normalization, Denoising & Correction | Xenium | DenoIST: Denoising Image-based Spatial Transcriptomics data |  | 2026-11-09 |
+| [DeepSpot2Cell](https://github.com/ratschlab/DeepSpot2Cell) | Registration, Alignment & Histology | Xenium | DeepSpot2Cell: Predicting virtual single-cell spatial transcriptomics from H&E images using spot-level supervision | [Preprint 2025](https://doi.org/10.1101/2025.09.23.678121) | 2026-11-09 |
+| [DeepSpatial](https://github.com/yyh030806/DeepSpatial) | Spatially Variable Genes & Differential Expression | MERFISH/MERSCOPE | Reconstructing True 3D Spatial Omics at Single-Cell Resolution | [Preprint 2026](https://doi.org/10.64898/2026.04.28.721395) | 2026-11-09 |
+| [CORAL](https://github.com/zou-group/CORAL) | Data Formats, Readers & Conversion | MERFISH/MERSCOPE, seqFISH | spatial multiomics integrative toolbox | [Preprint 2025](https://doi.org/10.1101/2025.02.01.636038) | 2026-11-09 |
+| [CORAL](https://github.com/mahmoodlab/CORAL) | Foundation Models & AI Agents | Xenium | Spatial biology processing suite | [Preprint 2025](https://doi.org/10.48550/arxiv.2506.03373) | 2026-11-09 |
+| [ClusterMap](https://github.com/wanglab-broad/ClusterMap) | Cell Segmentation | STARmap | ClusterMap for multi-scale clustering analysis of spatial gene expression | [Paper 2021](https://doi.org/10.1038/s41467-021-26044-x) | 2026-11-09 |
+| [celltype-agent](https://github.com/plobb/celltype-agent) | Cell Type Annotation & Label Transfer | Xenium | Agentic AI tool for automated cell type annotation of single-cell and spatial genomics data (10x Chromium, Visium, Xenium) using Claude and curated marker databases. |  | 2026-11-09 |
+| [cellpin](https://github.com/Saur-Lab/cellpin) | Normalization, Denoising & Correction | Xenium | Lightweight probabilistic model that reconstructs and denoises spatial transcriptomes from single-cell RNA-seq references | [Preprint 2026](https://doi.org/10.64898/2026.06.02.729566) | 2026-11-09 |
+| [celllens](https://github.com/sggao/celllens) | Spatial Domains & Niches | Xenium | CellLENS: Cross-domain information fusion for enhanced cell population delineation in single-cell spatial-omics data | [Paper 2025](https://doi.org/10.1038/s41590-025-02163-1) | 2026-11-09 |
+| [celldega](https://github.com/broadinstitute/celldega) | Viewers & Visualization | Xenium | Spatial and multiomic visualization and analysis library | [Preprint 2026](https://doi.org/10.64898/2026.08.13.744672) | 2026-11-09 |
 | [X-SPEAR](https://doi.org/10.64898/2026.10.13.756865) | Panel & Probe Design | Xenium | X-SPEAR: An Extensible Framework for Spatial Panel Evaluation and Refinement *(no code repository found yet)* | [Preprint 2026](https://doi.org/10.64898/2026.10.13.756865) | 2026-11-03 |
 | [NicheCorr](https://doi.org/10.64898/2026.10.23.761453) | Spatially Variable Genes & Differential Expression | Xenium, CosMx | NicheCorr: Identifying Niche-Specific Differential Gene Co-Expression in Spatial Transcriptomics *(no code repository found yet)* | [Preprint 2026](https://doi.org/10.64898/2026.10.23.761453) | 2026-11-03 |
 | [BiNVaST](https://doi.org/10.64898/2026.10.15.759369) | Cell Type Annotation & Label Transfer | Xenium, CosMx | BiNVaST: niche boundary-preserving and synthetic data-guided variational autoencoders for concordant inference across high-resolution spatial transcriptomic platforms *(no code repository found yet)* | [Preprint 2026](https://doi.org/10.64898/2026.10.15.759369) | 2026-11-03 |
@@ -321,4 +362,4 @@ Found by the weekly search and not yet checked. Treat these as leads, not recomm
 - **Papers** linked from a repo are the first DOI in its README that resolves in Crossref or DataCite; preprints are labelled *Preprint*.
 - **Limits:** keyword search misses tools that never name a platform, classification is approximate, and the paper link can occasionally be a related paper rather than the tool's own. Corrections are welcome via [CONTRIBUTING.md](CONTRIBUTING.md).
 
-*Last list change: 2026-11-03.*
+*Last list change: 2026-11-09.*
